@@ -216,12 +216,7 @@
     padding: 0 1rem;
 }
 
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-}
+
 
 .contact-grid {
     display: grid;
@@ -410,11 +405,6 @@
 
 /* life Page CSS*/
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
 
   .section {
     margin: 4rem 0;
