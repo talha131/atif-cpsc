@@ -54,16 +54,7 @@
   transform: translateY(0);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 @media (max-width: 768px) {
   .nav-links {
@@ -84,16 +75,6 @@
 
 
 /* General Styles */
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
         :root {
             --primary: #ffc8dd;
@@ -922,28 +903,3 @@
     z-index: 1002;
   }
 
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    
-    .section {
-      padding: 2rem;
-    }
-    
-    .nav-links {
-      display: none;
-    }
-  }
