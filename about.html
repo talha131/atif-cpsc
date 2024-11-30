@@ -114,7 +114,48 @@
     </div>
 </footer>
 
-<script src="Scripts.js"></script>
+
+<script>
+// Add click event listeners to profile images
+document.querySelectorAll('.profile-image').forEach(image => {
+  image.addEventListener('click', function() {
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <span class="modal-close">&times;</span>
+      <div class="modal-content">
+        ${this.innerHTML}
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    setTimeout(() => modal.classList.add('active'), 10);
+    
+    modal.querySelector('.modal-close').addEventListener('click', () => {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 300);
+    });
+    
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 300);
+      }
+    });
+  });
+});
+
+// Close modal with escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const modal = document.querySelector('.modal.active');
+    if (modal) {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 300);
+    }
+  }
+});
+</script>
 
 </body>
 </html>
