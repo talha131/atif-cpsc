@@ -6,52 +6,93 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
-    --accent: #e74c3c;
-}
+        :root {
+            --primary: #1a3b75;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+        }
 
-body {
-    background: #f5f6fa;
-    color: var(--primary);
-    line-height: 1.6;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-/* Navbar */
-.navbar {
-    background: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        body {
+            line-height: 1.6;
+            background: var(--light);
+        }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary);
-    text-decoration: none;
-}
+        .navbar {
+            background: var(--primary);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.nav-links a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
 
-.nav-links a:hover {
-    color: var(--secondary);
-}
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: var(--primary);
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
 
 /* Hero Section */
 .hero {
