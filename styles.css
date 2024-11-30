@@ -192,7 +192,7 @@ body {
 .footer {
   background: var(--primary);
   color: #f1f1f1;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .footer-content {
@@ -219,7 +219,7 @@ body {
 .footer-section p, 
 .footer-section ul {
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 0.4;
   color: #e0e0e0;
   margin: 0;
 }
