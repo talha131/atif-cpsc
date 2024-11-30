@@ -174,57 +174,7 @@
         Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
     </div>
 </footer>
-
-
-<script>
-function openTab(tabName) {
-  const tabContents = document.getElementsByClassName("tab-content");
-  for (let content of tabContents) {
-    content.classList.remove("active");
-  }
-
-  const tabs = document.getElementsByClassName("tab");
-  for (let tab of tabs) {
-    tab.classList.remove("active");
-  }
-
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
-}
-
-// Add modal functionality
-const modal = document.getElementById('imageModal');
-const modalImage = document.getElementById('modalImage');
-
-// Add click listeners to all gallery items
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const placeholderContent = this.querySelector('.placeholder-img').textContent;
-    modalImage.textContent = placeholderContent; // For placeholder text
-    // When you have real images, use this instead:
-    // modalImage.src = this.querySelector('img').src;
-    modal.classList.add('active');
-  });
-});
-
-function closeModal() {
-  modal.classList.remove('active');
-}
-
-// Close modal when clicking outside the image
-modal.addEventListener('click', function(e) {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
-
-// Close modal with escape key
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    closeModal();
-  }
-});
-</script>
+<script src="Scripts.js"></script>
 
 </body>
 </html> 
