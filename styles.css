@@ -192,7 +192,7 @@ body {
 .footer {
   background: var(--primary);
   color: #f1f1f1;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .footer-content {
