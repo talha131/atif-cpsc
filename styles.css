@@ -622,7 +622,7 @@
 
 .section-title {
   text-align: center;
-  color: #ffc8dd; /* Primary color */
+  color: #3D348B; /* Primary color */
   margin: 4rem 0 2rem;
   font-size: 2.5rem;
 }
@@ -650,7 +650,7 @@
 
 .facility-icon {
   height: 200px;
-  background: #ffc8dd; /* Primary color */
+  background: #7678ED; /* Primary color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -663,7 +663,7 @@
 }
 
 .facility-content h3 {
-  color: #ffc8dd; /* Primary color */
+  color: #F18701; /* Primary color */
   margin-bottom: 1rem;
 }
 
