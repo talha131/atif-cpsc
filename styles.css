@@ -138,7 +138,7 @@
         }
 
         .nav-links a {
-            color: white;
+            color: black;
             text-decoration: none;
             transition: color 0.3s;
         }
