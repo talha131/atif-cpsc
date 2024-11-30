@@ -265,9 +265,7 @@ body {
   color: var(--secondary);
 }
 .footer-bottom {
-  display: flex;
-  justify-content: space-between; /* Space between the left and center elements */
-  align-items: center; /* Align vertically */
+  position: relative; /* To position child elements relative to this container */
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -276,14 +274,15 @@ body {
 }
 
 .footer-bottom .designer-credit {
-  text-align: left; /* Align credit text to the left */
-  flex: 1; /* Occupy left side space */
+  text-align: left;
 }
 
 .footer-bottom p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the text horizontally */
   margin: 0;
-  text-align: center; /* Center align copyright */
-  flex: 1; /* Occupy center space */
+  text-align: center;
 }
 
 .footer-bottom a {
@@ -297,7 +296,6 @@ body {
   color: var(--light);
   text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
   .footer-content {
