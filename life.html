@@ -218,6 +218,70 @@
     object-fit: contain;
     border-radius: 10px;
   }
+  
+  
+  
+  
+  
+  
+  
+.facilities-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  color: #1a3b75; /* Primary color */
+  margin: 4rem 0 2rem;
+  font-size: 2.5rem;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facility-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+}
+
+.facility-icon {
+  height: 200px;
+  background: #1a3b75; /* Primary color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4rem;
+}
+
+.facility-content {
+  padding: 1.5rem;
+}
+
+.facility-content h3 {
+  color: #1a3b75; /* Primary color */
+  margin-bottom: 1rem;
+}
+
+.facility-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
 </style>
 
 
@@ -252,35 +316,37 @@
       <button class="tab" onclick="openTab('activities')">Activities</button>
     </div>
 
-  <section class="facilities-section">
-    <h2 class="section-title">Advanced Learning Facilities</h2>
-    <div class="facilities-grid">
-      <div class="facility-card">
-        <div class="facility-icon">🧪</div>
-        <div class="facility-content">
-          <h3>Furnished Labs</h3>
-          <p>Our spacious and well-furnished science and computer labs are equipped with the latest tools and equipment, providing students with hands-on learning experiences.</p>
-        </div>
-      </div>
-
-      <div class="facility-card">
-        <div class="facility-icon">🔬</div>
-        <div class="facility-content">
-          <h3>STEAM Lab</h3>
-          <p>The STEAM Lab encourages innovation and creative problem-solving through interactive projects and experiments that integrate multiple disciplines.</p>
-        </div>
-      </div>
-
-      <div class="facility-card">
-        <div class="facility-icon">🗣️</div>
-        <div class="facility-content">
-          <h3>Language Lab</h3>
-          <p>Our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication and pronunciation.</p>
-        </div>
+<section class="facilities-section">
+  <h2 class="section-title">Advanced Learning Facilities</h2>
+  <div class="facilities-grid">
+    <div class="facility-card">
+      <div class="facility-icon">🧪</div>
+      <div class="facility-content">
+        <h3>Furnished Labs</h3>
+        <p>Our spacious and well-furnished science and computer labs are equipped with the latest tools and equipment, providing students with hands-on learning experiences.</p>
       </div>
     </div>
-  </section>
-  
+
+    <div class="facility-card">
+      <div class="facility-icon">🔬</div>
+      <div class="facility-content">
+        <h3>STEAM Lab</h3>
+        <p>The STEAM Lab encourages innovation and creative problem-solving through interactive projects and experiments that integrate multiple disciplines.</p>
+      </div>
+    </div>
+
+    <div class="facility-card">
+      <div class="facility-icon">🗣️</div>
+      <div class="facility-content">
+        <h3>Language Lab</h3>
+        <p>Our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication and pronunciation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <div id="labs" class="tab-content active">
       <div class="grid">
         <div class="card">
