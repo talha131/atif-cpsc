@@ -324,8 +324,10 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 0.4rem; /* Tightened list spacing */
+  margin-bottom: 0.2rem; /* Reduce spacing between list items */
+  line-height: 1.2; /* Adjust line height for tighter spacing */
 }
+
 
 .footer-section ul li a {
     color: #f1f1f1;
