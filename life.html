@@ -1,0 +1,485 @@
+<html><head><base href="/" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS&C Malir - School Life</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="navbar-brand">CPS&C Malir</a>
+    <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/admission-policy">Admission Policy</a>
+        <a href="/life">Life at CPS&C</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+  }
+
+  body {
+    background: #f5f6fa;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+
+  .navbar {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .section:hover {
+    transform: translateY(-5px);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    aspect-ratio: 16/9;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .footer {
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tab-container {
+    margin-top: 2rem;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .tab:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+  }
+
+  .tab.active {
+    background: var(--accent);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .placeholder-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f1f1f1, #e1e1e1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Adding modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-content {
+    max-width: 80%;
+    max-height: 80vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+  }
+
+  .modal.active .modal-content {
+    transform: scale(1);
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+</style>
+
+
+<!-- Add modal HTML -->
+<div id="imageModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="placeholder-img" id="modalImage">Image Preview</div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>School Life at CPS&C Malir</h1>
+  <p>Nurturing Minds, Building Futures</p>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>About Our School Life</h2>
+    <p>At CPS&C Malir, we believe in providing a holistic learning environment that nurtures the academic, social, and personal growth of every student. Our campus is designed to inspire curiosity, foster creativity, and build lifelong skills.</p>
+  </div>
+
+  <div class="tab-container">
+    <div class="tabs">
+      <button class="tab active" onclick="openTab('labs')">Advanced Learning Facilities</button>
+      <button class="tab" onclick="openTab('trips')">Educational Trips</button>
+      <button class="tab" onclick="openTab('activities')">Activities</button>
+    </div>
+
+    <div id="labs" class="tab-content active">
+      <div class="grid">
+        <div class="card">
+          <div class="card-content">
+            <h3>Furnished Labs</h3>
+            <p>Our spacious and well-furnished science and computer labs are equipped with the latest tools and equipment, providing students with hands-on learning experiences.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>STEAM Lab</h3>
+            <p>The STEAM Lab encourages innovation and creative problem-solving through interactive projects and experiments that integrate multiple disciplines.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Language Lab</h3>
+            <p>Our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-gallery" id="labs-gallery">
+        <div class="gallery-item">
+          <div class="placeholder-img">Science Lab Photo 1</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">Computer Lab Photo 2</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">STEAM Lab Photo 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="trips" class="tab-content">
+      <div class="section">
+        <h2>Educational Trips</h2>
+        <p>Learning extends beyond the classroom through carefully selected study trips to various educational and cultural sites, enriching students' knowledge through real-world experiences.</p>
+      </div>
+      <div class="image-gallery" id="trips-gallery">
+        <div class="gallery-item">
+          <div class="placeholder-img">School Trip Photo 1</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">School Trip Photo 2</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">School Trip Photo 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="activities" class="tab-content">
+      <div class="section">
+        <h2>Vibrant Campus Life</h2>
+        <p>Our focus on overall student development includes various extracurricular activities, sports, and events that help build confidence and leadership skills.</p>
+      </div>
+      <div class="image-gallery" id="activities-gallery">
+        <div class="gallery-item">
+          <div class="placeholder-img">Activity Photo 1</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">Activity Photo 2</div>
+        </div>
+        <div class="gallery-item">
+          <div class="placeholder-img">Activity Photo 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/admission-policy">Admissions</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Connect with Us</h4>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
+    </div>
+    <div class="designer-credit">
+        Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
+    </div>
+</footer>
+
+
+<script>
+function openTab(tabName) {
+  const tabContents = document.getElementsByClassName("tab-content");
+  for (let content of tabContents) {
+    content.classList.remove("active");
+  }
+
+  const tabs = document.getElementsByClassName("tab");
+  for (let tab of tabs) {
+    tab.classList.remove("active");
+  }
+
+  document.getElementById(tabName).classList.add("active");
+  event.currentTarget.classList.add("active");
+}
+
+// Add modal functionality
+const modal = document.getElementById('imageModal');
+const modalImage = document.getElementById('modalImage');
+
+// Add click listeners to all gallery items
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const placeholderContent = this.querySelector('.placeholder-img').textContent;
+    modalImage.textContent = placeholderContent; // For placeholder text
+    // When you have real images, use this instead:
+    // modalImage.src = this.querySelector('img').src;
+    modal.classList.add('active');
+  });
+});
+
+function closeModal() {
+  modal.classList.remove('active');
+}
+
+// Close modal when clicking outside the image
+modal.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+// Close modal with escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

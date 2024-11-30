@@ -1,0 +1,399 @@
+<html><head><base href="https://cpsmalir.edu.pk/about"><meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About CPS&C Malir</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="navbar-brand">CPS&C Malir</a>
+    <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/admission-policy">Admission Policy</a>
+        <a href="/life">Life at CPS&C</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+  }
+
+  body {
+    background: #f5f6fa;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+
+  .navbar {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1.2s ease-out;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .section {
+    margin: 4rem 0;
+    padding: 3rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .section:hover {
+    transform: translateY(-5px);
+  }
+
+  .section h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .message-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .message-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .message-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--secondary);
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .placeholder-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f1f1f1, #e1e1e1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+  }
+
+  .message-content {
+    text-align: center;
+  }
+
+  .message-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .message-content h4 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .message-content p {
+    text-align: justify;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-content {
+    max-width: 80%;
+    max-height: 80vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .footer {
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .section {
+      padding: 2rem;
+    }
+    
+    .nav-links {
+      display: none;
+    }
+  }
+</style>
+
+<div class="hero">
+  <h1>About CPS&C Malir</h1>
+  <p>Nurturing Excellence, Building Character</p>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>Vision</h2>
+    <p>Dedicated to a continuing ML&C tradition of excellence in an ever-changing world. Within a safe and congenial environment, to provide relevant, high-quality education and prepare a dynamic student body for future endeavors at par with global standards by instilling in them critical thinking skills, and respect for core values of honesty, loyalty, perseverance, and compassion. To honor achievements and promote pride in ourselves, in our school, and in our community.</p>
+  </div>
+
+  <div class="section">
+    <h2>Mission</h2>
+    <p>The mission of CPES is to provide a comprehensive learning environment, integrating various modules of STEAM, thus expanding learning horizons to new dimensions where cantonment residents are valued and respected. All staff members in partnership with parents and families are fully committed to the academic well-being of learners, empowering them with cognitive and work readiness skills and becoming socially responsible citizens.</p>
+  </div>
+
+  <div class="message-grid">
+    <div class="message-card">
+      <div class="profile-image">
+        <div class="placeholder-img">President's Photo</div>
+      </div>
+      <div class="message-content">
+        <h3>Message From The President</h3>
+        <h4>Brig. Suhail Abbas</h4>
+        <p>Cantt Public School and College has brought out its first magazine. Since I have assumed the charge of President Cantonment Board this is yet, another major achievement. Our system, has been providing educational facilities through its dynamics approach focusing on core values of honesty, loyalty, perseverance, and compassion. Our students include wards of Cantonment Board Malir employees, residents of Malir Cantt and many others whom we consider an asset to be polished and groomed...</p>
+      </div>
+    </div>
+
+    <div class="message-card">
+      <div class="profile-image">
+        <div class="placeholder-img">CEO's Photo</div>
+      </div>
+      <div class="message-content">
+        <h3>Message From The CEO</h3>
+        <h4>Mr. Arfeen Zubair Chaudhry</h4>
+        <p>Education is a key that unlocks the creative impulses within human beings and I would say it emphatically, that education is the process of empowering individuals and educational institutions are the agents of this empowerment. Our mission is to strive for excellence and to give quality education to all our students. Collectively, we are committed that every student has equal access to educational opportunities irrespective of their background or circumstances...</p>
+      </div>
+    </div>
+
+    <div class="message-card">
+      <div class="profile-image">
+        <div class="placeholder-img">Principal's Photo</div>
+      </div>
+      <div class="message-content">
+        <h3>Message From The Principal</h3>
+        <h4>Ms. Uzma Nauman</h4>
+        <p>It is my pride and privilege to be the Principal of Cantt Public School & College Malir Cantt Karachi. In addition to the numerous achievements of the institution "Reflections" is yet another milestone. An institution magazine reflects the identity of an educational institution and has a great educative value. It is a forum which encourages students to think, write and express themselves on different issues...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/admission-policy">Admissions</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Connect with Us</h4>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
+    </div>
+    <div class="designer-credit">
+        Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
+    </div>
+</footer>
+
+
+<script>
+// Add click event listeners to profile images
+document.querySelectorAll('.profile-image').forEach(image => {
+  image.addEventListener('click', function() {
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <span class="modal-close">&times;</span>
+      <div class="modal-content">
+        ${this.innerHTML}
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    setTimeout(() => modal.classList.add('active'), 10);
+    
+    modal.querySelector('.modal-close').addEventListener('click', () => {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 300);
+    });
+    
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 300);
+      }
+    });
+  });
+});
+
+// Close modal with escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const modal = document.querySelector('.modal.active');
+    if (modal) {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 300);
+    }
+  }
+});
+</script>
+
+</body>
+</html>

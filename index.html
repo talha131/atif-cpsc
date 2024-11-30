@@ -1,0 +1,284 @@
+<html><head><base href="https://cpsmalir.edu.pk/"><meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CPS&C Malir</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="navbar-brand">CPS&C Malir</a>
+    <div class="nav-links">
+        <a href="/about">About</a>
+        <a href="/admission-policy">Admission Policy</a>
+        <a href="/life">Life at CPS&C</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<style>
+:root {
+  --primary: #1a3b75;
+  --secondary: #d4af37;
+  --light: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: var(--light);
+}
+
+.navbar {
+  background: var(--primary);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.gallery {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.gallery h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 59, 117, 0.9);
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to CPS&C Malir</h1>
+      <p>Empowering Minds, Shaping Futures</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Campus Life Gallery</h2>
+    <div class="gallery-grid">
+      <a href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="Academic Excellence">
+        <div class="gallery-caption">Academic Excellence</div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1527525443983-6e60c75fff46" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46" alt="Sports Activities">
+        <div class="gallery-caption">Sports Activities</div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1525921429624-479b6a26d84d" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1525921429624-479b6a26d84d" alt="Laboratory Facilities">
+        <div class="gallery-caption">Laboratory Facilities</div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Library">
+        <div class="gallery-caption">Library</div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1511732831640-a201294ac90e" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1511732831640-a201294ac90e" alt="Cultural Events">
+        <div class="gallery-caption">Cultural Events</div>
+      </a>
+      <a href="https://images.unsplash.com/photo-1523580494863-6f3031224c94" class="gallery-item glightbox">
+        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94" alt="Campus Life">
+        <div class="gallery-caption">Campus Life</div>
+      </a>
+    </div>
+	<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/admission-policy">Admissions</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Connect with Us</h4>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
+    </div>
+    <div class="designer-credit">
+        Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
+    </div>
+</footer>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+    });
+
+    // Animate sections on scroll
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.style.opacity = 0;
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'all 0.6s ease-out';
+        observer.observe(item);
+    });
+});
+</script>
+
+</body></html>
