@@ -219,7 +219,7 @@ body {
 .footer-section p, 
 .footer-section ul {
   font-size: 0.9rem;
-  line-height: 0.4;
+  line-height: 1;
   color: #e0e0e0;
   margin: 0;
 }
