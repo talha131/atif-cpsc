@@ -266,9 +266,8 @@ body {
 }
 .footer-bottom {
   display: flex;
-  justify-content: space-between; /* Space between the left and centered elements */
-  align-items: center; /* Align items vertically */
-  text-align: center; /* Center align the text inside flex items */
+  justify-content: space-between; /* Space between the left and center elements */
+  align-items: center; /* Align vertically */
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -277,14 +276,28 @@ body {
 }
 
 .footer-bottom .designer-credit {
-  flex: 1; /* Takes the left side */
-  text-align: left; /* Align text to the left */
+  text-align: left; /* Align credit text to the left */
+  flex: 1; /* Occupy left side space */
 }
 
-.footer-bottom .copyright {
-  flex: 1; /* Takes the center side */
-  text-align: center; /* Center-align the copyright text */
+.footer-bottom p {
+  margin: 0;
+  text-align: center; /* Center align copyright */
+  flex: 1; /* Occupy center space */
 }
+
+.footer-bottom a {
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: var(--light);
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .footer-content {
