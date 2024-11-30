@@ -96,9 +96,9 @@
 }
 
         :root {
-            --primary: #cdb4db;
-            --secondary: #bde0fe;
-            --light: #ffc8dd;
+            --primary: #ffc8dd;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
         }
 
         * {
@@ -622,7 +622,7 @@
 
 .section-title {
   text-align: center;
-  color: #1a3b75; /* Primary color */
+  color: #ffc8dd; /* Primary color */
   margin: 4rem 0 2rem;
   font-size: 2.5rem;
 }
@@ -650,7 +650,7 @@
 
 .facility-icon {
   height: 200px;
-  background: #a2d2ff; /* Primary color */
+  background: #ffc8dd; /* Primary color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -663,7 +663,7 @@
 }
 
 .facility-content h3 {
-  color: #a2d2ff; /* Primary color */
+  color: #ffc8dd; /* Primary color */
   margin-bottom: 1rem;
 }
 
