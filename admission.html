@@ -87,7 +87,7 @@
 
       <h3>Subjects Offered for HSSC Part-I</h3>
       <div class="table-responsive">
-        <table class="subject-table">
+        <table class="subject-table modern-table">
           <tr>
             <th>Compulsory Subjects</th>
             <th>Optional Subjects<br>(Pre-Med)</th>
@@ -169,6 +169,27 @@
     </div>
 </footer>
 
+
+<script>
+// Add dynamic hover effect with cursor tracking
+document.querySelectorAll('.modern-list li').forEach(item => {
+    item.addEventListener('mousemove', (e) => {
+        const rect = item.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        item.style.setProperty('--x', `${x}px`);
+        item.style.setProperty('--y', `${y}px`);
+    });
+});
+
+// Add hover effect for table rows
+document.querySelectorAll('.modern-table tbody tr').forEach(row => {
+    row.addEventListener('mouseover', () => {
+        row.style.cursor = 'pointer';
+    });
+});
+</script>
 
 
 </body></html>
