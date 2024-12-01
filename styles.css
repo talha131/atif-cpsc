@@ -939,3 +939,37 @@
   max-height: 90%; /* Adjusts image height to 90% of screen height */
   object-fit: contain; /* Ensures the aspect ratio is maintained */
 }
+
+
+
+
+
+
+
+
+li {
+  list-style-type: none;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+li::before {
+  content: "✓";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+}
