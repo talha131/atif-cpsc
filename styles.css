@@ -684,9 +684,11 @@
     padding: 10px; /* Add some padding */
     border-radius: 4px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 128, 0, 0.2); /* Subtle shadow */
-    width: 600px; /* Fix the width to 100px */
+    width: 90%; /* Use a percentage width for responsiveness */
+    max-width: 600px; /* Set a maximum width for larger screens */
     margin: 0 auto; /* Center the h3 element within its parent */
     text-align: center; /* Center-align the text inside the h3 */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .policy-section {
