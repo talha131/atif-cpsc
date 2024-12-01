@@ -946,41 +946,91 @@
 
 
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 20px;
-}
-
-ul {
-  list-style-type: none;
+/* Modern List Styles */
+.modern-list {
+  list-style: none;
   padding: 0;
-  margin: 0;
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-li {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  color: #fff;
-  padding: 15px 20px;
+.modern-list li {
+  background: white;
   margin: 10px 0;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4CAF50;
   display: flex;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
-li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.modern-list li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-li::before {
-  content: "✓";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 18px;
-  color: #fff;
+.modern-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(76, 175, 80, 0.1);
+  transition: width 0.3s ease;
+  z-index: 0;
+}
+
+.modern-list li:hover::before {
+  width: 100%;
+}
+
+.modern-list li span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Different border colors for variety */
+.modern-list li:nth-child(2n) {
+  border-left-color: #2196F3;
+}
+
+.modern-list li:nth-child(3n) {
+  border-left-color: #FF5722;
+}
+
+.modern-list li:nth-child(4n) {
+  border-left-color: #9C27B0;
+}
+
+body {
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Adding some animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.modern-list li {
+  animation: slideIn 0.5s ease forwards;
+  animation-delay: calc(var(--item-index) * 0.1s);
+  opacity: 0;
 }
