@@ -946,9 +946,20 @@
 
 
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 li {
-  list-style-type: none;
   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   color: #fff;
   padding: 15px 20px;
