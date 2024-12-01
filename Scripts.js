@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 });
+
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', function() {
+      // Get the image source from the clicked gallery item
+      const imageSrc = this.querySelector('img').src;
+      
+      // Set the source of the modal image to the clicked image's source
+      modalImage.src = imageSrc;
+      
+      // Show the modal
+      modal.style.display = 'block';
+  });
+});
