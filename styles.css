@@ -692,27 +692,7 @@
   margin-bottom: 1rem;
 }
 
-.subject-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-.subject-table th, .subject-table td {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-.subject-table th {
-  background: var(--primary);
-  color: white;
-}
-
-.subject-table tr:nth-child(even) {
-  background: #f9f9f9;
-}
 
 .eligibility-list {
   list-style: none;
@@ -1092,3 +1072,4 @@
   animation-delay: calc(var(--row-index) * 0.1s);
   opacity: 0;
 }
+
