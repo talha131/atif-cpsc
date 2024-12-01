@@ -672,16 +672,21 @@
   position: relative;
 }
 
+.policy-content {
+    text-align: center; /* Center-align the h3 within the container */
+}
+
 .policy-content h3 {
     color: #32CD32; /* Light green color */
     background-color: #F0FFF0; /* Light greenish background */
     font-family: 'Arial', sans-serif; /* Choose a clean font */
     font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center align the text */
     padding: 10px; /* Add some padding */
-    border: 2px solid #90EE90; /* Light green border */
-    border-radius: 6px; /* Rounded corners */
+    border-radius: 4px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 128, 0, 0.2); /* Subtle shadow */
+    width: 600px; /* Fix the width to 100px */
+    margin: 0 auto; /* Center the h3 element within its parent */
+    text-align: center; /* Center-align the text inside the h3 */
 }
 
 .policy-section {
