@@ -1,13 +1,14 @@
-<html><head><base href="/" />
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS&C Malir - School Life</title>
-    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar">
     <a href="/" class="navbar-brand">CPS&C Malir</a>
     <div class="nav-links">
@@ -18,213 +19,162 @@
     </div>
 </nav>
 
-<style>
-
-
-</style>
-
-
-<!-- Add modal HTML -->
-<div id="imageModal" class="modal">
-  <span class="modal-close" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-    <div class="placeholder-img" id="modalImage">Image Preview</div>
-  </div>
-</div>
-
-
-
-  <section class="hero">
+<!-- Hero Section -->
+<section class="hero">
     <div class="hero-content">
-    
-  <h1>School Life at CPS&C Malir</h1>
-  <p>Nurturing Minds, Building Futures</p>
+        <h1>School Life at CPS&C Malir</h1>
+        <p>Nurturing Minds, Building Futures</p>
     </div>
-  </section> 
-
-<div class="container">
-  <div class="section">
-    <h2>About Our School Life</h2>
-    <p>At CPS&C Malir, we believe in providing a holistic learning environment that nurtures the academic, social, and personal growth of every student. Our campus is designed to inspire curiosity, foster creativity, and build lifelong skills.</p>
-  </div>
-
-  <div class="tab-container">
-    <div class="tabs">
-      <button class="tab active" onclick="openTab('labs')">Advanced Learning Facilities</button>
-      <button class="tab" onclick="openTab('trips')">Educational Trips</button>
-      <button class="tab" onclick="openTab('activities')">Activities</button>
-    </div>
-
-    <div id="labs" class="tab-content active">
-
-<section class="facilities-section">
-  <div class="facilities-grid">
-    <div class="facility-card">
-      <div class="facility-icon">🧪</div>
-      <div class="facility-content">
-        <h3>Furnished Labs</h3>
-        <p>Our spacious and well-furnished science and computer labs are equipped with the latest tools and equipment, providing students with hands-on learning experiences.</p>
-      </div>
-    </div>
-
-    <div class="facility-card">
-      <div class="facility-icon">🔬</div>
-      <div class="facility-content">
-        <h3>STEAM Lab</h3>
-        <p>The STEAM Lab encourages innovation and creative problem-solving through interactive projects and experiments that integrate multiple disciplines.</p>
-      </div>
-    </div>
-
-    <div class="facility-card">
-      <div class="facility-icon">🗣️</div>
-      <div class="facility-content">
-        <h3>Language Lab</h3>
-        <p>Our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication and pronunciation.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
- <div class="image-gallery" id="labs-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">Science Lab Photo 1</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Computer Lab Photo 2</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">STEAM Lab Photo 3</div>
-        </div>
-      </div>
- </div>
-
-
-
-    <div id="trips" class="tab-content">
-      <div class="section">
-        <h2>Educational Trips</h2>
-        <p>Learning extends beyond the classroom through carefully selected study trips to various educational and cultural sites, enriching students' knowledge through real-world experiences.</p>
-      </div>
-      <div class="image-gallery" id="trips-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 1</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 2</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 3</div>
-        </div>
-      </div>
+<!-- Main Content -->
+<div class="container">
+    <div class="section">
+        <h2>About Our School Life</h2>
+        <p>At CPS&C Malir, we believe in providing a holistic learning environment that nurtures the academic, social, and personal growth of every student. Our campus is designed to inspire curiosity, foster creativity, and build lifelong skills.</p>
     </div>
 
-    <div id="activities" class="tab-content">
-      <div class="section">
-        <h2>Vibrant Campus Life</h2>
-        <p>Our focus on overall student development includes various extracurricular activities, sports, and events that help build confidence and leadership skills.</p>
-      </div>
-      <div class="image-gallery" id="activities-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 1</div>
+    <div class="tab-container">
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="openTab('labs')">Advanced Learning Facilities</button>
+            <button class="tab" onclick="openTab('trips')">Educational Trips</button>
+            <button class="tab" onclick="openTab('activities')">Activities</button>
         </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 2</div>
+
+        <!-- Tab Content -->
+        <div id="labs" class="tab-content active">
+            <section class="facilities-section">
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="facility-icon">🧪</div>
+                        <h3>Furnished Labs</h3>
+                        <p>Our science and computer labs provide hands-on learning experiences with the latest tools and equipment.</p>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-icon">🔬</div>
+                        <h3>STEAM Lab</h3>
+                        <p>Encouraging innovation through interactive projects integrating science, technology, engineering, arts, and math.</p>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-icon">🗣️</div>
+                        <h3>Language Lab</h3>
+                        <p>Interactive sessions to improve communication and pronunciation in English and other languages.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="image-gallery" id="labs-gallery">
+                <div class="gallery-item">
+                    <div class="placeholder-img">Science Lab Photo 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">Computer Lab Photo 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">STEAM Lab Photo 3</div>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 3</div>
+
+        <div id="trips" class="tab-content">
+            <h2>Educational Trips</h2>
+            <p>Carefully selected trips to educational and cultural sites enrich students' knowledge with real-world experiences.</p>
+            <div class="image-gallery" id="trips-gallery">
+                <div class="gallery-item">
+                    <div class="placeholder-img">Trip Photo 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">Trip Photo 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">Trip Photo 3</div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div id="activities" class="tab-content">
+            <h2>Vibrant Campus Life</h2>
+            <p>Various extracurricular activities, sports, and events build confidence and leadership skills.</p>
+            <div class="image-gallery" id="activities-gallery">
+                <div class="gallery-item">
+                    <div class="placeholder-img">Activity Photo 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">Activity Photo 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img">Activity Photo 3</div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-section">
             <h4>About Us</h4>
             <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
         </div>
-
         <div class="footer-section">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/admission-policy">Admissions</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/admission.html">Admissions</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
-
         <div class="footer-section">
             <h4>Connect with Us</h4>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
-                    </svg>
-                    Facebook
-                </a>
-            </div>
+            <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">Facebook</a>
         </div>
     </div>
-
     <div class="footer-bottom">
         <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
-    </div>
-    <div class="designer-credit">
-        Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
+        <p>Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a></p>
     </div>
 </footer>
 
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="placeholder-img" id="modalImage">Image Preview</div>
+    </div>
+</div>
 
+<!-- JavaScript -->
 <script>
 function openTab(tabName) {
-  const tabContents = document.getElementsByClassName("tab-content");
-  for (let content of tabContents) {
-    content.classList.remove("active");
-  }
-
-  const tabs = document.getElementsByClassName("tab");
-  for (let tab of tabs) {
-    tab.classList.remove("active");
-  }
-
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
+    document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+    document.getElementById(tabName).classList.add("active");
+    event.currentTarget.classList.add("active");
 }
 
-// Add modal functionality
 const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
 
-// Add click listeners to all gallery items
 document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const placeholderContent = this.querySelector('.placeholder-img').textContent;
-    modalImage.textContent = placeholderContent; // For placeholder text
-    // When you have real images, use this instead:
-    // modalImage.src = this.querySelector('img').src;
-    modal.classList.add('active');
-  });
+    item.addEventListener('click', () => {
+        modalImage.textContent = item.querySelector('.placeholder-img').textContent;
+        modal.classList.add('active');
+    });
 });
 
 function closeModal() {
-  modal.classList.remove('active');
+    modal.classList.remove('active');
 }
 
-// Close modal when clicking outside the image
-modal.addEventListener('click', function(e) {
-  if (e.target === modal) {
-    closeModal();
-  }
+modal.addEventListener('click', e => {
+    if (e.target === modal) closeModal();
 });
 
-// Close modal with escape key
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    closeModal();
-  }
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
 });
 </script>
 
 </body>
-</html> 
+</html>
