@@ -1,30 +1,37 @@
-<html><head><base href="/" /><meta charset="UTF-8">
+<html><head><meta charset="UTF-8">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Admission Policy - CPS&C Malir</title>
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="Scripts.js"></script>
 </head>
 <body>
  
-<nav class="navbar">
-    <a href="/" class="navbar-brand">CPS&C Malir</a>
-    <div class="nav-links">
-        <a href="/about.html">About</a>
-        <a href="/admission.html">Admission Policy</a>
-        <a href="/life.html">Life at CPS&C</a>
-        <a href="/contact.html">Contact</a>
-    </div>
-</nav>
-<style>
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">CPS&C Malir</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="/admission.html">ADMISSION POLICY</a>
+            <a href="/life.html">LIFE AT CPS&C</a>
+            <a href="/contact.html">CONTACT</a>
+        </div>
+    </nav>
 
 
-</style>
 
 
-
-  <section class="hero">
+<section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('images/admission.jpg') center/cover;">
     <div class="hero-content">
        <h1>Admission Policy</h1>
 	   <p>Nurturing Minds, Building Futures</p>
@@ -163,29 +170,5 @@
 </footer>
 
 
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Animate sections on scroll
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = 1;
-              entry.target.style.transform = 'translateY(0)';
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-
-      document.querySelectorAll('.policy-section').forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'all 0.6s ease-out';
-        observer.observe(section);
-      });
-    });
-  </script>
 
 </body></html>

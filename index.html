@@ -1,15 +1,18 @@
-<html><head><base href="/" /><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact CPS&C Malir</title>
-    <!-- Link to the external stylesheet -->
+    <title>CPS&C Malir</title>
     <link rel="stylesheet" href="styles.css">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="Scripts.js"></script>
+
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -20,90 +23,197 @@
             <span></span>
         </div>
         <div class="nav-links" id="nav-links">
-            <a href="/about.html">About</a>
-            <a href="/admission.html">Admission Policy</a>
-            <a href="/life.html">Life at CPS&C</a>
-            <a href="/contact.html">Contact</a>
+            <a href="/admission.html">ADMISSION POLICY</a>
+            <a href="/life.html">LIFE AT CPS&C</a>
+            <a href="/contact.html">CONTACT</a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('images/home.jpg') center/cover;">
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to CPS&C Malir</h1>
-      <p>Empowering Minds, Shaping Futures</p>
-    </div>
-  </section> 
+        <div class="hero-content">
+            <h1>Welcome to CPS&C Malir</h1>
+            <p>Empowering Minds, Shaping Futures</p>
+        </div>
+    </section>
 
-  <section class="gallery">
-    <h2>Campus Life Gallery</h2>
-    <div class="gallery-grid">
-      <a href="images/Home/home (1).jpg" class="gallery-item glightbox">
+<!-- Modal HTML -->
+<div id="imageModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Image Preview" /> <!-- Make sure this is an img tag -->
+  </div>
+</div>
+
+    <!-- Gallery Section -->
+
+        <h2>Campus Life Gallery</h2>
+        <div class="image-gallery" id="home-gallery">
+    <div class="gallery-item">
         <img src="images/Home/home (1).jpg" alt="Academic Excellence">
         <div class="gallery-caption">Academic Excellence</div>
-      </a>
-     <a href="images/Home/home (2).jpg" class="gallery-item glightbox">
+    </div>
+    <div class="gallery-item">
         <img src="images/Home/home (2).jpg" alt="Sports Activities">
         <div class="gallery-caption">Sports Activities</div>
-      </a>
-       <a href="images/Home/home (3).jpg" class="gallery-item glightbox">
+    </div>
+    <div class="gallery-item">
         <img src="images/Home/home (3).jpg" alt="Laboratory Facilities">
         <div class="gallery-caption">Laboratory Facilities</div>
-      </a>
-      <a href="images/Home/home (4).jpg" class="gallery-item glightbox">
+    </div>
+    <div class="gallery-item">
         <img src="images/Home/home (4).jpg" alt="Library">
         <div class="gallery-caption">Library</div>
-      </a>
-      <a href="images/Home/home (5).jpg" class="gallery-item glightbox">
+    </div>
+    <div class="gallery-item">
         <img src="images/Home/home (5).jpg" alt="Cultural Events">
         <div class="gallery-caption">Cultural Events</div>
-      </a>
-      <a href="images/Home/home (6).jpg" class="gallery-item glightbox">
+    </div>
+    <div class="gallery-item">
         <img src="images/Home/home (6).jpg" alt="Campus Life">
         <div class="gallery-caption">Campus Life</div>
-      </a>
     </div>
-  </section>	
-	<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
-        </div>
+</div>
 
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/admission-policy">Admissions</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="section">
+                <h2>Vision</h2>
+                <p>Dedicated to a continuing ML&C tradition of excellence in an ever-changing world. Within a safe and congenial environment, to provide relevant, high-quality education and prepare a dynamic student body for future endeavors at par with global standards by instilling in them critical thinking skills, and respect for core values of honesty, loyalty, perseverance, and compassion. To honor achievements and promote pride in ourselves, in our school, and in our community</p>
+            </div>
 
-        <div class="footer-section">
-            <h4>Connect with Us</h4>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
-                    </svg>
-                    Facebook
-                </a>
+            <div class="section">
+                <h2>Mission</h2>
+                <p>The mission of CPES is to provide a comprehensive learning environment, integrating various modules of STEAM, thus expanding learning horizons to new dimensions where cantonment residents are valued and respected. All staff members in partnership with parents and families are fully committed to the academic well-being of learners, empowering them with cognitive and work readiness skills and becoming socially responsible citizens.</p>
+            </div>
+
+            <div class="message-grid">
+                <div class="message-card fade-in-on-scroll">
+                    <div class="profile-image">
+					        <!-- <img src="images/about/President.jpg" alt="President" class="profile-img">  -->
+						  
+						   <div class="placeholder-img">President</div>
+
+             
+                    </div>
+                    <div class="message-content">
+                        <h3>Message From The President</h3>
+                        <h4>Brig. Suhail Abbas</h4>
+                        <p>Cantt Public School and College has brought out its first magazine. Since I have assumed the charge of President Cantonment Board this is yet, another major achievement. Our system, has been providing educational facilities through its dynamics approach focusing on core values of honesty, loyalty, perseverance, and compassion. Our students include wards of Cantonment Board Malir employees, residents of Malir Cantt and many others whom we consider an asset to be polished and groomed. Our goal is to impart quality education and “Education is not the learning of facts, but the training of the mind to think” (Albert Einstein). Any Institution’s magazine is a true reflection of the culture and attainments of the institution. A magazine showcases the talent, creativity and intellectual excellence of the staff and student. It satisfies the instincts of self – actualization and self-accomplishment among the perspective writers, poets, thinkers and scholars of tomorrow. In the last I would like to express my pleasure and compliment all those who have contributed to this milestone achievement. I am sure they will continue to work with the same zeal and effort leading to an ever – improved education system in the future as well. May Allah bless us with a crowning success in all our endeavours. Ameen.</p>
+                    </div>
+                </div>
+
+                <div class="message-card fade-in-on-scroll">
+                    <div class="profile-image">
+					
+					            <img src="images/about/ceo.jpg" alt="CEO" class="profile-img">
+                    </div>
+                    <div class="message-content">
+                        <h3>Message From The CEO</h3>
+                        <h4>Mr. Arfeen Zubair Chaudhry</h4>
+                        <p>Education is a key that unlocks the creative impulses within human beings and I would say it emphatically, that education is the process of empowering individuals and educational institutions are the agents of this empowerment. Our mission is to strive for excellence and to give quality education to all our students . Collectively, we are committed that every student has equal access to educational opportunities irrespective of their background or circumstances. It is with great pleasure that I congratulate Cantt Public School & College Malir Cantt on the successful publication of first ever magazine named 'Reflections'. I would also like to extend appreciation to all those who have contributed in this project. This magazine will not only be a source of pride for our school, but also a reflection of the incredible passion and talent that make up our school’s community.</p>
+                    </div>
+                </div>
+
+                <div class="message-card fade-in-on-scroll">
+                    <div class="profile-image">
+					<img src="images/about/principal.jpg" alt="Principal" class="profile-img">
+                        
+                    </div>
+                    <div class="message-content">
+                        <h3>Message From The Principal</h3>
+                        <h4>Ms. Uzma Nauman</h4>
+                        <p>It is my pride and privilege to be the Principal of Cantt Public School & College Malir Cantt Karachi. In addition to the numerous achievements of the institution "Reflections" is yet another milestone. An institution magazine reflects the identity of an educational institution and has a great educative value. It is a forum which encourages students to think, write and express themselves on different issues.
+We have faith in our students and we believe that with an optimistic approach we can bring forth the best and reach the pinnacle of perfection in whatever task we undertake. In our institution, every student is considered unique whose talent potential is groomed in consonance with our vision that "we give dream to every child.
+Best wishes to all the students, present and outgoing. You are the future of our country, aim high and march forward to make us and yourself proud. May Allah Almighty bless you all. Ameen.
+</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom">
-        <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
-    </div>
-    <div class="designer-credit">
-        Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
-    </div>
-</footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Building Tomorrow's Leaders Today through quality education and strong values at CPS&C Malir.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/life.html">LIFE AT CPS&C</a></li>
+					 
+                    <li><a href="//admission.html">ADMISSION</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CPS&C Malir. All rights reserved.</p>
+        </div>
+        <div class="designer-credit">
+            Designed by <a href="https://www.urdutechzone.com" target="_blank">UTZ</a>
+        </div>
+    </footer>
+
+<script>
+// Add modal functionality
+const modal = document.getElementById('imageModal');
+const modalImage = document.getElementById('modalImage');
+
+// Add click listeners to all gallery items
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', function() {
+    // Get the image source from the clicked gallery item
+    const imageSrc = this.querySelector('img').src;
+    
+    // Set the source of the modal image to the clicked image's source
+    modalImage.src = imageSrc;
+
+    // Show the modal
+    modal.classList.add('active');
+  });
+});
+
+// Close modal function
+function closeModal() {
+  modal.classList.remove('active');
+}
+
+// Close modal when clicking outside the image
+modal.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+// Close modal with escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
 
 
-<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-<script src="Scripts.js"></script>
-
-
-</body></html>
+</script>
+</body>
+</html>

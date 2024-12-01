@@ -1,40 +1,44 @@
-<html><head><base href="/" />
+<html><head><meta charset="UTF-8">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS&C Malir - School Life</title>
+	<title>CPS&C Malir - School Life</title>
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="Scripts.js"></script>
 </head>
 <body>
+ 
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">CPS&C Malir</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="/admission.html">ADMISSION POLICY</a>
+            <a href="/life.html">LIFE AT CPS&C</a>
+            <a href="/contact.html">CONTACT</a>
+        </div>
+    </nav>
 
-<nav class="navbar">
-    <a href="/" class="navbar-brand">CPS&C Malir</a>
-    <div class="nav-links">
-        <a href="/about.html">About</a>
-        <a href="/admission.html">Admission Policy</a>
-        <a href="/life.html">Life at CPS&C</a>
-        <a href="/contact.html">Contact</a>
-    </div>
-</nav>
 
-<style>
-
-
-</style>
-
-
-<!-- Add modal HTML -->
+<!-- Modal HTML -->
 <div id="imageModal" class="modal">
   <span class="modal-close" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-    <div class="placeholder-img" id="modalImage">Image Preview</div>
+    <img id="modalImage" src="" alt="Image Preview" /> <!-- Make sure this is an img tag -->
   </div>
 </div>
 
 
-
-  <section class="hero">
+  <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('images/life.jpg') center/cover;">
     <div class="hero-content">
     
   <h1>School Life at CPS&C Malir</h1>
@@ -45,18 +49,17 @@
 <div class="container">
   <div class="section">
     <h2>About Our School Life</h2>
-    <p>At CPS&C Malir, we believe in providing a holistic learning environment that nurtures the academic, social, and personal growth of every student. Our campus is designed to inspire curiosity, foster creativity, and build lifelong skills.</p>
+    <p>At CPS&C Malir, we believe in providing a holistic learning environment that nurtures the academic, social, and personal growth of every student. Our campus is designed to inspire curiosity, foster creativity, and build lifelong skills. Here's a glimpse of the enriching school life we offer:</p>
   </div>
 
   <div class="tab-container">
     <div class="tabs">
-      <button class="tab active" onclick="openTab('labs')">Advanced Learning Facilities</button>
-      <button class="tab" onclick="openTab('trips')">Educational Trips</button>
-      <button class="tab" onclick="openTab('activities')">Activities</button>
-    </div>
 
     <div id="labs" class="tab-content active">
-
+      <div class="section">
+        <h2>Advanced Learning Facilities</h2>
+        <p>Our modern and fully-equipped facilities ensure that students have access to the best resources for their educational journey. We take pride in our specialized labs, including:</p>
+      </div>
 <section class="facilities-section">
   <div class="facilities-grid">
     <div class="facility-card">
@@ -71,7 +74,7 @@
       <div class="facility-icon">🔬</div>
       <div class="facility-content">
         <h3>STEAM Lab</h3>
-        <p>The STEAM Lab encourages innovation and creative problem-solving through interactive projects and experiments that integrate multiple disciplines.</p>
+        <p>The STEAM (Science, Technology, Engineering, Arts, and Mathematics) Lab encourages innovation and creative problem-solving. Students have the opportunity to explore their interests through interactive projects and experiments that integrate multiple disciplines.</p>
       </div>
     </div>
 
@@ -79,64 +82,119 @@
       <div class="facility-icon">🗣️</div>
       <div class="facility-content">
         <h3>Language Lab</h3>
-        <p>Our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication and pronunciation.</p>
+        <p>To enhance language skills, our advanced Language Lab offers interactive sessions in English and other languages, helping students improve their communication and pronunciation through technology-assisted learning.</p>
       </div>
     </div>
   </div>
 </section>
 
- <div class="image-gallery" id="labs-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">Science Lab Photo 1</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Computer Lab Photo 2</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">STEAM Lab Photo 3</div>
-        </div>
-      </div>
- </div>
+<div class="image-gallery" id="labs-gallery">
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (1).jpeg" alt="Science Lab Photo 1" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (2).jpeg" alt="Computer Lab Photo 2" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (3).jpeg" alt="STEAM Lab Photo 3" />
+    </div>
+    <!-- Add more items for the remaining images -->
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (4).jpeg" alt="Lab Photo 4" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (5).jpeg" alt="Lab Photo 5" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (6).jpeg" alt="Lab Photo 6" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (7).jpeg" alt="Lab Photo 7" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Labs\Labs (8).jpeg" alt="Lab Photo 8" />
+    </div>
+</div>
 
 
 
-    <div id="trips" class="tab-content">
+    <div id="trips" class="tab-content  active">
       <div class="section">
         <h2>Educational Trips</h2>
-        <p>Learning extends beyond the classroom through carefully selected study trips to various educational and cultural sites, enriching students' knowledge through real-world experiences.</p>
+        <p>At CPS&C Malir, we believe that learning extends beyond the classroom. Our students regularly participate in study trips to various educational and cultural sites, enriching their knowledge through real-world experiences. These trips are carefully selected to complement the curriculum, offering students a deeper understanding of subjects while also fostering teamwork and social interaction.</p>
       </div>
-      <div class="image-gallery" id="trips-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 1</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 2</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">School Trip Photo 3</div>
-        </div>
-      </div>
+     <div class="image-gallery" id="trips-gallery">
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (1).jpg" alt="School Trip Photo 1" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (2).jpg" alt="School Trip Photo 2" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (3).jpg" alt="School Trip Photo 3" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (4).jpg" alt="School Trip Photo 4" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (5).jpg" alt="School Trip Photo 5" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (6).jpg" alt="School Trip Photo 6" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (7).jpg" alt="School Trip Photo 7" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (8).jpg" alt="School Trip Photo 8" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (9).jpg" alt="School Trip Photo 9" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (10).jpg" alt="School Trip Photo 10" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\Educational Trips\Trips (11).jpg" alt="School Trip Photo 11" />
+    </div>
+</div>
+
     </div>
 
-    <div id="activities" class="tab-content">
+    <div id="activities" class="tab-content  active">
       <div class="section">
         <h2>Vibrant Campus Life</h2>
-        <p>Our focus on overall student development includes various extracurricular activities, sports, and events that help build confidence and leadership skills.</p>
+        <p>Apart from academics, we focus on overall student development through extracurricular activities, sports, and events. Students are encouraged to explore their talents and passions, building confidence and developing leadership skills that will serve them in all aspects of life.</p>
       </div>
-      <div class="image-gallery" id="activities-gallery">
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 1</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 2</div>
-        </div>
-        <div class="gallery-item">
-          <div class="placeholder-img">Activity Photo 3</div>
-        </div>
-      </div>
+<div class="image-gallery" id="activities-gallery">
+    <div class="gallery-item">
+        <img src="images\activities\Activites (1).jpg" alt="Activity Photo 1" />
+      
+    </div>
+    <div class="gallery-item">
+        <img src="images\activities\Activites (2).jpg" alt="Activity Photo 2" />
+       
+    </div>
+    <div class="gallery-item">
+        <img src="images\activities\Activites (3).jpg" alt="Activity Photo 3" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\activities\Activites (4).jpg" alt="Activity Photo 4" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\activities\Activites (5).jpg" alt="Activity Photo 5" />
+    </div>
+    <div class="gallery-item">
+        <img src="images\activities\Activites (6).jpg" alt="Activity Photo 6" />
+    </div>
+</div>
+
     </div>
   </div>
 </div>
+  </div>
+</div>
+
 
 <footer class="footer">
     <div class="footer-content">
@@ -177,20 +235,7 @@
 
 
 <script>
-function openTab(tabName) {
-  const tabContents = document.getElementsByClassName("tab-content");
-  for (let content of tabContents) {
-    content.classList.remove("active");
-  }
 
-  const tabs = document.getElementsByClassName("tab");
-  for (let tab of tabs) {
-    tab.classList.remove("active");
-  }
-
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
-}
 
 // Add modal functionality
 const modal = document.getElementById('imageModal');
@@ -199,14 +244,18 @@ const modalImage = document.getElementById('modalImage');
 // Add click listeners to all gallery items
 document.querySelectorAll('.gallery-item').forEach(item => {
   item.addEventListener('click', function() {
-    const placeholderContent = this.querySelector('.placeholder-img').textContent;
-    modalImage.textContent = placeholderContent; // For placeholder text
-    // When you have real images, use this instead:
-    // modalImage.src = this.querySelector('img').src;
+    // Get the image source from the clicked gallery item
+    const imageSrc = this.querySelector('img').src;
+    
+    // Set the source of the modal image to the clicked image's source
+    modalImage.src = imageSrc;
+
+    // Show the modal
     modal.classList.add('active');
   });
 });
 
+// Close modal function
 function closeModal() {
   modal.classList.remove('active');
 }
