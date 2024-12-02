@@ -282,6 +282,27 @@ body#contact-page .navbar {
     transition: color 0.3s ease;
 }
 
+/* Mobile View (for screens less than 768px) */
+@media screen and (max-width: 768px) {
+    /* Stack the items vertically on small screens */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center; /* Ensure text is centered on mobile */
+    }
+    
+    /* Ensure the designer credit is left-aligned */
+    .footer-bottom .designer-credit {
+        text-align: left;
+        margin-bottom: 10px; /* Add spacing below "Designed by UTZ" */
+    }
+
+    /* Center the copyright text in mobile view */
+    .footer-bottom .copyright {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove the centering adjustment */
+    }
+}
+
 
 
 /* Responsive Design */
