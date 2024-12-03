@@ -583,6 +583,7 @@ body#contact-page .navbar {
 	margin-top: 2rem;
 }
 
+
 .hours-list {
 	list-style: none;
 	margin-top: 1rem;
@@ -595,12 +596,14 @@ body#contact-page .navbar {
 
 /* Map */
 .map-container {
+	background: white;
 	margin-top: 3rem;
 	width: 100%;
 	height: 450px;
 	border-radius: 15px;
 	overflow: hidden;
 }
+
 
 .map-container iframe {
 	width: 100%;
