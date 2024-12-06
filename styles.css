@@ -1,3 +1,9 @@
+.navbar-logo img {
+   height: 60px; /* Adjust as needed */
+   width: auto;
+   display: inline-block; /* Ensure it aligns inline with the text */
+}
+
 /* General Styles */
 
 /* Body Style */
