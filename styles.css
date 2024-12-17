@@ -790,39 +790,91 @@ body#contact-page .hero{
 }
 
 /* Home Page CSS */
-/* Home Page CSS */
-#introduction {
-    background-color: rgba(247, 249, 251, 0.7); /* Light Grayish Blue with 70% transparency */
-    padding: 20px;
-    color: #3E3E3E; /* Charcoal */
-}
-
-/* Vision Section - Soft Sky Blue */
-#vision {
-    background-color: rgba(135, 206, 250, 0.7); /* Soft Sky Blue with 70% transparency */
-    color: #3E3E3E; /* Charcoal text */
-    padding: 20px;
-}
-
-/* Mission Section - Soft Mint Green */
-#mission {
-    background-color: rgba(152, 251, 152, 0.7); /* Soft Mint Green with 70% transparency */
-    color: #3E3E3E; /* Charcoal text */
-    padding: 20px;
-}
-
-/* Values Section - Light Cream */
-#messages {
-    background-color: rgba(255, 239, 181, 0.7); /* Light Cream with 70% transparency */
-    color: #3E3E3E; /* Charcoal text */
-    padding: 20px;
-}
-
-/* Goals Section - Soft Rose */
+/* Base Style for the Sections */
+#introduction,
+#vision,
+#mission,
+#messages,
 #HomePageGallery {
-    background-color: rgba(255, 182, 193, 0.7); /* Soft Rose with 70% transparency */
-    color: #3E3E3E; /* Charcoal text */
     padding: 20px;
+    color: #3E3E3E; /* Charcoal text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and scroll effect */
+    opacity: 0.15; /* Initial opacity to make it lighter */
+    transform: translateY(50px); /* Sections are initially offset vertically */
+}
+
+/* Section Hover Effects */
+#introduction {
+    background-color: rgba(255, 228, 196, 0.15); /* Light Moccasin with 15% transparency */
+}
+
+#introduction:hover {
+    background-color: rgba(255, 228, 196, 0.5); /* Increased opacity to 50% on hover */
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(0); /* Smooth scroll effect (up) */
+}
+
+#vision {
+    background-color: rgba(255, 218, 185, 0.15); /* Peach Puff with 15% transparency */
+}
+
+#vision:hover {
+    background-color: rgba(255, 218, 185, 0.5); /* Increased opacity to 50% on hover */
+    opacity: 1;
+    transform: translateY(0); /* Smooth scroll effect (up) */
+}
+
+#mission {
+    background-color: rgba(173, 255, 47, 0.15); /* Green Yellow with 15% transparency */
+}
+
+#mission:hover {
+    background-color: rgba(173, 255, 47, 0.5); /* Increased opacity to 50% on hover */
+    opacity: 1;
+    transform: translateY(0); /* Smooth scroll effect (up) */
+}
+
+#messages {
+    background-color: rgba(255, 239, 179, 0.15); /* Light Goldenrod Yellow with 15% transparency */
+}
+
+#messages:hover {
+    background-color: rgba(255, 239, 179, 0.5); /* Increased opacity to 50% on hover */
+    opacity: 1;
+    transform: translateY(0); /* Smooth scroll effect (up) */
+}
+
+#HomePageGallery {
+    background-color: rgba(255, 105, 180, 0.15); /* Hot Pink with 15% transparency */
+}
+
+#HomePageGallery:hover {
+    background-color: rgba(255, 105, 180, 0.5); /* Increased opacity to 50% on hover */
+    opacity: 1;
+    transform: translateY(0); /* Smooth scroll effect (up) */
+}
+
+/* Scroll Animation for Sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the Scroll Animation */
+#introduction, #vision, #mission, #messages, #HomePageGallery {
+    animation: fadeInUp 1s ease-out forwards; /* Apply smooth scroll fade-in animation */
+}
+
+/* Trigger the Scroll Animation on Page Load */
+body {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay to make sure the page elements have loaded */
 }
 
 /* Gallery Section */
