@@ -1160,7 +1160,7 @@ body {
         padding: 1rem; /* Reduce grid padding */
     }
     .facility-card {
-        margin: 0.5rem; /* Less margin around each card */
+        margin: 0.2rem; /* Less margin around each card */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Slightly lighter shadow */
     }
 }
