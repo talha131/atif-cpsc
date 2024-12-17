@@ -1,5 +1,4 @@
-
-body#about-page  {
+body#about-page >div  {
 
 .about {
   max-width: 1200px;
