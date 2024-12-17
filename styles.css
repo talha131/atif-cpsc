@@ -1131,24 +1131,41 @@ body {
 	line-height: 1.6;
 }
 
+
+.facility-content h3 {
+	    font-family: 'PT Serif', serif;
+
+	color: #F18701;
+	/* Primary color */
+	margin-bottom: 1rem;
+}
+
+
+.facility-content h3 {
+	    font-family: 'PT Serif', serif;
+
+	color: #F18701;
+	/* Primary color */
+	margin-bottom: 1rem;
+}
+.facility-content p {
+	color: #666;
+	line-height: 1.6;
+}
+
+/* Media Query for Mobile (Adjusting Margins) */
+@media (max-width: 768px) {
+    .facilities-grid {
+        gap: 1rem; /* Reduce gap between facility cards */
+        padding: 1rem; /* Reduce grid padding */
+    }
+    .facility-card {
+        margin: 0.5rem; /* Less margin around each card */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Slightly lighter shadow */
+    }
+}
+
 /* admission Page CSS*/
-
-.facility-content h3 {
-	    font-family: 'PT Serif', serif;
-
-	color: #F18701;
-	/* Primary color */
-	margin-bottom: 1rem;
-}
-
-
-.facility-content h3 {
-	    font-family: 'PT Serif', serif;
-
-	color: #F18701;
-	/* Primary color */
-	margin-bottom: 1rem;
-}
 
 .policy-content {
 	max-width: 1200px;
@@ -1171,12 +1188,6 @@ body {
 	animation: fadeIn 1s ease;
 }
 
-.facility-content p {
-	color: #666;
-	line-height: 1.6;
-}
-
-/* admission Page CSS*/
 
 .policy-content {
 	max-width: 1200px;
