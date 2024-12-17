@@ -445,6 +445,8 @@ body {
                 padding: 1rem;
                 gap: 1rem;
                 box-shadow: 0 4px 6px var(--shadow-color);
+				z-index: 2000;
+
             }
 
             .nav-links.active {
