@@ -78,9 +78,6 @@ ul li:hover:after {
   border-radius: 8px;
 }
 
-.leader p {
-  margin-bottom: 1rem;
-}
 
 .apply-now {
   display: inline-block;
@@ -103,6 +100,66 @@ ul li:hover:after {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(212,175,55,0.4);
 }
+.legacy {
+  background-color: rgba(255, 182, 193, 0.2); /* Light pink */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.campus {
+  background-color: rgba(173, 216, 230, 0.2); /* Light blue */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.values {
+  background-color: rgba(152, 251, 152, 0.2); /* Light green */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.leadership {
+  background-color: rgba(240, 230, 140, 0.2); /* Light yellow */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.join {
+  background-color: rgba(221, 160, 221, 0.2); /* Light purple */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.legacy:hover {
+  background-color: rgba(255, 182, 193, 0.4); /* Slightly darker on hover */
+}
+
+.campus:hover {
+  background-color: rgba(173, 216, 230, 0.4); 
+}
+
+.values:hover {
+  background-color: rgba(152, 251, 152, 0.4); 
+}
+
+.leadership:hover {
+  background-color: rgba(240, 230, 140, 0.4); 
+}
+
+.join:hover {
+  background-color: rgba(221, 160, 221, 0.4); 
+}
+
 
 @media (max-width: 768px) {
   .about {
@@ -218,11 +275,6 @@ ul li strong {
 }
 
 /* Leadership Section */
-.leader {
-    margin-bottom: 30px;
-}
-
-
 
 .leader p {
     font-size: 16px;
