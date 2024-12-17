@@ -432,31 +432,30 @@ body {
             border-radius: 2px;
         }
 
-        /* Mobile Navigation */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: var(--primary-color);
-                position: absolute;
-                top: 100%;
-                right: 0;
-                left: 0;
-                padding: 1rem;
-                gap: 1rem;
-                box-shadow: 0 4px 6px var(--shadow-color);
-				z-index: 2000;
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 4px 6px var(--shadow-color);
+        z-index: 2000;
+    }
 
-            }
+    .nav-links.active {
+        display: flex;
+    }
 
-            .nav-links.active {
-                display: flex;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-        }
+    .hamburger {
+        display: flex;
+    }
+}
 /* Page-specific Hero Background */
 body#home-page .hero {
 	background: url('images/home.jpg') center/cover;
