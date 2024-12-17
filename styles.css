@@ -1,4 +1,4 @@
-body#about-page >div  {
+body#about-page > div  {
 
 .about {
   max-width: 1200px;
@@ -159,7 +159,6 @@ body {
 }
 
 p {
-  margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
 h2 {
