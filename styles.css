@@ -172,10 +172,10 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-h3 {
+h3 ,h4{
   color: var(--primary-color);
   margin: 1.5rem 0 1rem;
-  font-size: 1.8rem;
+  
 }
 
 * {
@@ -1046,6 +1046,23 @@ body#contact-page .hero{
 
 /* admission Page CSS*/
 
+.facility-content h3 {
+	    font-family: 'PT Serif', serif;
+
+	color: #F18701;
+	/* Primary color */
+	margin-bottom: 1rem;
+}
+
+
+.facility-content h3 {
+	    font-family: 'PT Serif', serif;
+
+	color: #F18701;
+	/* Primary color */
+	margin-bottom: 1rem;
+}
+
 .policy-content {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -1067,6 +1084,80 @@ body#contact-page .hero{
 	animation: fadeIn 1s ease;
 }
 
+.facility-content p {
+	color: #666;
+	line-height: 1.6;
+}
+
+/* admission Page CSS*/
+
+.policy-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3rem 2rem;
+	background: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin-top: -50px;
+	position: relative;
+}
+
+.policy-content {
+	text-align: center;
+	/* Center-align the h3 within the container */
+}
+
+.policy-content h3  {
+	color: #32CD32;
+	/* Light green color */
+	background-color: #F0FFF0;
+	/* Light greenish background */
+	    font-family: 'PT Serif', serif;
+	/* Choose a clean font */
+	font-weight: bold;
+	/* Make the text bold */
+	padding: 10px;
+	/* Add some padding */
+	border-radius: 4px;
+	/* Rounded corners */
+	box-shadow: 0 4px 6px rgba(0, 128, 0, 0.2);
+	/* Subtle shadow */
+	width: 90%;
+	/* Use a percentage width for responsiveness */
+	max-width: 600px;
+	/* Set a maximum width for larger screens */
+	margin: 0 auto;
+	/* Center the h3 element within its parent */
+	text-align: center;
+	/* Center-align the text inside the h3 */
+	box-sizing: border-box;
+	/* Ensure padding doesn't affect width */
+}
+
+.policy-section {
+	margin-bottom: 2rem;
+	animation: fadeIn 1s ease;
+}
+
+.policy-section h2 {
+    font-family: 'PT Serif', serif;
+	text-align: center;
+	/* Center align the text */
+	color: #3498db;
+	/* Replace with a specific color (e.g., light blue) */
+	margin-bottom: 1rem;
+	border-bottom: 2px solid #2ecc71;
+	/* Replace with another color (e.g., green) */
+	padding-bottom: 0.5rem;
+	font-family: 'Segoe UI', sans-serif;
+	/* Modern font style */
+	text-transform: uppercase;
+	/* Makes text uppercase for emphasis */
+	font-weight: bold;
+	/* Adds prominence */
+	letter-spacing: 0.05em;
+	/* Slight spacing between letters */
+}
 
 
 @keyframes fadeIn {
