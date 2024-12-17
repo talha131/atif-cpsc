@@ -914,17 +914,6 @@ body {
     transform: translateY(0);
 }
 
-.placeholder-img {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #e2e2e2, #d0d0d0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 0.9rem;
-    text-align: center;
-}
 
 .message-grid {
     display: grid;
@@ -1014,13 +1003,7 @@ body {
 	margin-bottom: 1rem;
 }
 
-.hours-card {
-	background: white;
-	padding: 2rem;
-	border-radius: 15px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-	margin-top: 2rem;
-}
+
 .map-container {
 	background: white;
 	padding: 2rem;
@@ -1029,15 +1012,6 @@ body {
 	margin-top: 2rem;
 }
 
-.hours-list {
-	list-style: none;
-	margin-top: 1rem;
-}
-
-.hours-list li {
-	padding: 0.5rem 0;
-	border-bottom: 1px solid #eee;
-}
 
 /* Map */
 .map-container {
@@ -1220,7 +1194,7 @@ body {
 .policy-content h3  {
 	color: #32CD32;
 	/* Light green color */
-	background-color: #F0FFF0;
+	background-color: #feffe8;
 	/* Light greenish background */
 	    font-family: 'PT Serif', serif;
 	/* Choose a clean font */
