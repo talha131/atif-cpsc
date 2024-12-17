@@ -555,6 +555,8 @@ body#contact-page .hero{
 .footer-social a {
 	color: #f1f1f1;
 	font-size: 1rem;
+    text-decoration: none; /* Removes underline from all links */
+
 	/* Reduced icon size */
 	transition: color 0.3s ease;
 	display: inline-flex;
