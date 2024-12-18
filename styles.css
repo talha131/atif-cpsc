@@ -330,7 +330,7 @@ body {
 /* Navbar styles */
         /* Root Variables for Colors */
         :root {
-            --hover-color: #0bf1bf;   /* Neon Green */
+            --hover-color: #dfd174;   /* Neon Green */
             --text-color: #ffffff;    /* White */
             --shadow-color: rgba(0, 0, 0, 0.2);
         }
