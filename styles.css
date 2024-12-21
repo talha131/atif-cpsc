@@ -202,7 +202,7 @@ ul li:hover:after {
 /* General/Common  styles */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'PT Sans';
     line-height: 1.6;
 }
 
@@ -211,7 +211,7 @@ p {
 }
 h2 {
   color: var(--primary-color);
-  font-family: var(--header-font);
+  font-family: 'PT Serif', serif;
   margin-bottom: 1.5rem;
   font-size: 2.2rem;
   border-bottom: 2px solid var(--accent-color);
@@ -221,6 +221,8 @@ h2 {
 h3 ,h4{
   color: var(--primary-color);
   margin: 1.5rem 0 1rem;
+  font-family: 'PT Serif', serif;
+
   
 }
 
@@ -297,12 +299,6 @@ ul li strong {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
-
-body {
-	font-family: 'PT Sans', sans-serif;
-	line-height: 1.6;
 }
 
 
@@ -319,7 +315,6 @@ body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
 
         /* Navbar styles */
@@ -439,21 +434,21 @@ body {
 
 /* Page-specific Hero Background */
 body#home-page .hero {
-	background: url('images/home.jpg') center/cover;
+	background: url('images/home.webp') center/cover;
 }
 body#about-page .hero {
-	background: url('images/about.jpg') center/cover;
+	background: url('images/about.webp') center/cover;
 }
 body#admission-page .hero {
-	background: url('images/admission.jpg') center/cover;
+	background: url('images/admission.webp') center/cover;
 }
 
 body#life-page .hero {
-	background: url('images/life.jpg') center/cover;
+	background: url('images/life.webp') center/cover;
 }
 
 body#contact-page .hero{
-	background: url('images/home.jpg') center/cover;
+	background: url('images/home.webp') center/cover;
 }
 
  
@@ -487,7 +482,6 @@ body#contact-page .hero{
 	color: white;
 	font-size: 3.5rem;
 	margin-bottom: 1rem;
-    font-family: 'PT Serif', serif;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -528,8 +522,6 @@ body#contact-page .hero{
 }
 
 .footer-section h4 {
-	    font-family: 'PT Serif', serif;
-
 	font-size: 1.2rem;
 	/* Slightly smaller heading */
 	margin-bottom: 0.5rem;
@@ -929,7 +921,6 @@ body {
 }
 
 .message-content h4 {
-    font-family: 'PT Serif', serif;
     color: rgba(183, 58, 58, 0.7); /* Warm Burgundy with 70% transparency */
     margin-bottom: 1rem;
     font-style: italic;
@@ -1106,8 +1097,6 @@ body {
 
 
 .facility-content h3 {
-	    font-family: 'PT Serif', serif;
-
 	color: #F18701;
 	/* Primary color */
 	margin-bottom: 1rem;
@@ -1115,8 +1104,6 @@ body {
 
 
 .facility-content h3 {
-	    font-family: 'PT Serif', serif;
-
 	color: #F18701;
 	/* Primary color */
 	margin-bottom: 1rem;
@@ -1183,7 +1170,6 @@ body {
 	/* Light green color */
 	background-color: #feffe8;
 	/* Light greenish background */
-	    font-family: 'PT Serif', serif;
 	/* Choose a clean font */
 	font-weight: bold;
 	/* Make the text bold */
@@ -1211,7 +1197,6 @@ body {
 }
 
 .policy-section h2 {
-    font-family: 'PT Serif', serif;
 	text-align: center;
 	/* Center align the text */
 	color: #3498db;
@@ -1220,7 +1205,6 @@ body {
 	border-bottom: 2px solid #2ecc71;
 	/* Replace with another color (e.g., green) */
 	padding-bottom: 0.5rem;
-	font-family: 'Segoe UI', sans-serif;
 	/* Modern font style */
 	text-transform: uppercase;
 	/* Makes text uppercase for emphasis */
@@ -1261,7 +1245,6 @@ body {
 	padding: 0;
 	max-width: 600px;
 	margin: 50px auto;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modern-list li {
