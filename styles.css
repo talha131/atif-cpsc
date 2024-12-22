@@ -288,7 +288,6 @@ ul li strong {
   box-sizing: border-box;
 }
 
-/* Navbar styles */
 /* Root Variables for Colors */
 :root {
   --hover-color: #dfd174; /* Neon Green */
@@ -304,36 +303,6 @@ ul li strong {
 }
 
 /* Navbar styles */
-
-.navbar-brand {
-  -webkit-animation: navbar-brand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: navbar-brand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-@-webkit-keyframes navbar-brand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes navbar-brand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .navbar {
   background: var(--primary-color);
   padding: 1rem;
@@ -344,7 +313,7 @@ ul li strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px var(--shadow-color); /* Navbar shadow */
+  box-shadow: 0 4px 6px var(--shadow-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -359,22 +328,20 @@ ul li strong {
 }
 
 .navbar-logo img {
-  height: 60px;
+  height: 50px;
   width: auto;
-  display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 4px 6px var(--shadow-color); /* Logo shadow */
+  box-shadow: 0 4px 6px var(--shadow-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar-logo img:hover {
-  transform: scale(1.1); /* Logo scaling effect */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
 }
 
 .navbar-brand {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -388,6 +355,7 @@ ul li strong {
 .nav-links {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -395,22 +363,18 @@ ul li strong {
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease;
-  padding: 10px 20px; /* Increases padding for better touch targets */
-  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
   border-radius: 5px;
-  min-width: 44px; /* Ensures minimum width for touch targets */
-  display: inline-block; /* Ensures a larger clickable area */
-  text-align: center; /* Centers the text for better appearance */
+  display: inline-block;
+  text-align: center;
 }
 
 .nav-links a:hover {
   background-color: var(--hover-color);
   color: var(--primary-color);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-  transform: translateY(-3px);
 }
 
-/* Hamburger Menu (Mobile) */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -426,8 +390,11 @@ ul li strong {
 }
 
 /* Mobile Navigation */
-
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -436,36 +403,18 @@ ul li strong {
     top: 100%;
     right: 0;
     left: 0;
-  }
-  .about {
+    gap: 1rem;
     padding: 1rem;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  .tagline {
-    font-size: 1.2rem;
-  }
-
-  .legacy,
-  .campus,
-  .values,
-  .leadership,
-  .achievements,
-  .join {
-    padding: 1.5rem;
-  }
-  .hamburger {
-    display: flex;
-  /* Ensure touch targets are large enough on mobile */
-  /* Ensure touch targets are large enough on mobile */
-  .footer-bottom a,
-  .footer-social a,
-  .footer-section ul li a,
   .nav-links a {
-    padding: 12px 24px; /* Increases padding for easier mobile interaction */
+    font-size: 1rem;
+    padding: 12px;
+    box-shadow: none;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
 
