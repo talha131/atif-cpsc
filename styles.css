@@ -972,7 +972,7 @@ body {
 }
 
 .message-card {
-  background: white;
+  background: rgba(193, 219, 131, 0.329);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light box shadow */
