@@ -482,111 +482,92 @@ body#contact-page .hero {
   margin-bottom: 3rem;
   font-style: italic;
 }
-
 /* Footer */
 .footer {
   background: #333;
   color: #f1f1f1;
   padding: 1rem 1rem;
-  /* Reduced padding */
+  text-align: center; /* Center text by default */
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   gap: 1rem;
-  /* Reduced gap between sections */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer-section {
   flex: 1 1 calc(33.333% - 1rem);
-  /* Adjusted for smaller gap */
   min-width: 200px;
-  /* Reduced minimum width */
 }
 
 .footer-section h4 {
   font-size: 1.2rem;
-  /* Slightly smaller heading */
   margin-bottom: 0.5rem;
-  /* Reduced spacing below heading */
   color: var(--secondary);
   font-weight: bold;
+  text-align: center; /* Center heading text */
 }
 
 .footer-section p,
 .footer-section ul {
   font-size: 0.9rem;
-  /* Smaller text */
   line-height: 1.4;
-  /* Reduced line height */
   color: #e0e0e0;
-  margin: 0;
-  /* Removed extra margins */
+  text-align: center; /* Center paragraphs and lists */
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0.5rem 0;
-  /* Reduced spacing around list */
 }
 
 .footer-section ul li {
   margin-bottom: 0.2rem;
-  /* Reduce spacing between list items */
   line-height: 1.2;
-  /* Adjust line height for tighter spacing */
 }
 
 .footer-section ul li a {
   color: #f1f1f1;
   text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline-block; /* Ensures a larger clickable area */
-  padding: 10px 20px; /* Adds padding to make the target large enough */
-  min-width: 44px; /* Ensures minimum width for touch targets */
-  text-align: center; /* Centers the text for better appearance */
-}
-.footer-section ul li a:hover {
-  color: var(--secondary);
-  text-decoration: underline;
+  display: inline-block;
+  padding: 10px 20px;
+  min-width: 44px;
+  text-align: center;
 }
 
 .footer-social {
   display: flex;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   gap: 0.75rem;
-  /* Reduced gap between icons */
   margin-top: 0.5rem;
-  /* Tightened spacing above social links */
 }
 
 .footer-social a {
   color: #f1f1f1;
   font-size: 1rem;
-  text-decoration: none; /* Removes underline from all links */
-  transition: color 0.3s ease;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 10px; /* Adds padding for touch target size */
-  min-width: 44px; /* Ensures minimum width for touch targets */
-  border-radius: 5px; /* Optional: for rounded touch targets */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .footer-social a:hover {
   color: var(--secondary);
-  text-decoration: underline;
 }
 
 /* Footer Bottom Section */
 .footer-bottom {
   display: flex;
-  justify-content: space-between; /* Ensures space between the elements */
+  justify-content: space-between; /* Distribute items evenly */
   align-items: center;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
@@ -596,9 +577,10 @@ body#contact-page .hero {
   position: relative;
 }
 
-/* Designer Credit - Left Aligned */
+/* Designer Credit - Right Aligned */
 .footer-bottom .designer-credit {
-  text-align: left;
+  text-align: right;
+  flex: 1; /* Take up available space */
 }
 
 /* Copyright - Centered */
@@ -606,52 +588,23 @@ body#contact-page .hero {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
 }
 
-/* Footer Links */
 .footer-bottom a {
   color: var(--secondary);
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline-block; /* Ensures a larger clickable area */
-  padding: 10px 20px; /* Adds padding to make the target large enough */
-  min-width: 44px; /* Ensures minimum width for touch targets */
-  text-align: center; /* Centers the text for better appearance */
+  padding: 10px 20px;
+  text-align: center;
 }
-/* Mobile View (for screens less than 768px) */
+
+/* Mobile View */
 @media screen and (max-width: 768px) {
-  /* Stack the items vertically on small screens */
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center; /* Ensure text is centered on mobile */
-  }
-
-  /* Ensure the designer credit is left-aligned */
-  .footer-bottom .designer-credit {
-    text-align: left;
-    margin-bottom: 10px; /* Add spacing below "Designed by UTZ" */
-  }
-
-  /* Center the copyright text in mobile view */
-  .footer-bottom .copyright {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove the centering adjustment */
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    text-align: center;
     gap: 1rem;
-    /* Smaller gap between sections */
-  }
-
-  .footer-section {
-    margin-bottom: 0.5rem;
-    /* Reduced spacing between sections */
+    text-align: center; /* Ensure text is centered */
   }
 
   .footer-social {
