@@ -457,7 +457,9 @@ ul li strong {
   .join {
     padding: 1.5rem;
   }
-
+  .hamburger {
+    display: flex;
+  /* Ensure touch targets are large enough on mobile */
   /* Ensure touch targets are large enough on mobile */
   .footer-bottom a,
   .footer-social a,
