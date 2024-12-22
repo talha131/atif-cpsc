@@ -5,21 +5,11 @@ body#about-page > div {
   .leadership,
   .achievements,
   .join {
-    margin-bottom: 2rem;
     padding: 3rem;
     background: var(--secondary-color);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-  .legacy:hover,
-  .campus:hover,
-  .values:hover,
-  .leadership:hover,
-  .achievements:hover,
-  .join:hover {
-    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
 
   ul li {
@@ -29,30 +19,30 @@ body#about-page > div {
     transition: all 0.3s ease;
   }
 
-  ul li:before {
+  ul li:before,
+  ul li:after {
     content: "";
     position: absolute;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+
+  ul li:before {
+    left: 0;
     width: 8px;
     height: 8px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    transition: all 0.3s ease;
   }
 
   ul li:after {
-    content: "";
-    position: absolute;
     left: 4px;
-    top: 50%;
     width: 12px;
     height: 2px;
     background-color: var(--accent-color);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
   }
 
   ul li:hover:before {
@@ -64,23 +54,19 @@ body#about-page > div {
     transform: scaleX(1);
   }
 
+  .achievements ul li {
+    padding-left: 1.5rem;
+  }
+
   .achievements ul li::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: var(--accent-color);
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
+    content: "★";
+    color: var(--accent-color);
+    position: absolute;
+    left: -1.2rem;
+  }
+
+  .achievements ul li::after {
+    display: none;
   }
 
   .leader {
@@ -97,13 +83,13 @@ body#about-page > div {
     padding: 1.2rem 2.5rem;
     text-decoration: none;
     border-radius: 6px;
-    transition: all 0.3s ease;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 2rem;
     box-shadow: 0 4px 15px rgba(128, 0, 0, 0.3);
+    transition: all 0.3s ease;
   }
 
   .apply-now:hover {
@@ -111,64 +97,55 @@ body#about-page > div {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
   }
-  .legacy {
-    background-color: rgba(255, 182, 193, 0.2); /* Light pink */
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 20;
-    transition: background-color 0.3s ease;
-  }
 
-  .campus {
-    background-color: rgba(173, 216, 230, 0.2); /* Light blue */
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 20;
-    transition: background-color 0.3s ease;
-  }
-
-  .values {
-    background-color: rgba(152, 251, 152, 0.2); /* Light green */
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 20;
-    transition: background-color 0.3s ease;
-  }
-
-  .leadership {
-    background-color: rgba(240, 230, 140, 0.2); /* Light yellow */
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 20;
-    transition: background-color 0.3s ease;
-  }
-
+  .legacy,
+  .campus,
+  .values,
+  .leadership,
   .join {
-    background-color: rgba(221, 160, 221, 0.2); /* Light purple */
+    background-color: rgba(255, 255, 255, 0.2); /* Base background */
     border-radius: 5px;
     padding: 15px;
-    margin: 10px 20;
-    transition: background-color 0.3s ease;
   }
+
+  .legacy {
+    background-color: rgba(255, 182, 193, 0.2);
+  } /* Light pink */
+  .campus {
+    background-color: rgba(173, 216, 230, 0.2);
+  } /* Light blue */
+  .values {
+    background-color: rgba(152, 251, 152, 0.2);
+  } /* Light green */
+  .leadership {
+    background-color: rgba(240, 230, 140, 0.2);
+  } /* Light yellow */
+  .join {
+    background-color: rgba(221, 160, 221, 0.2);
+  } /* Light purple */
 
   .legacy:hover {
-    background-color: rgba(255, 182, 193, 0.4); /* Slightly darker on hover */
+    background-color: rgba(255, 182, 193, 0.4);
   }
-
   .campus:hover {
     background-color: rgba(173, 216, 230, 0.4);
   }
-
   .values:hover {
     background-color: rgba(152, 251, 152, 0.4);
   }
-
   .leadership:hover {
     background-color: rgba(240, 230, 140, 0.4);
   }
-
   .join:hover {
     background-color: rgba(221, 160, 221, 0.4);
+  }
+
+  .legacy:hover,
+  .campus:hover,
+  .values:hover,
+  .leadership:hover,
+  .join:hover {
+    transform: translateY(-5px);
   }
 
   @media (max-width: 768px) {
@@ -208,17 +185,6 @@ body#about-page > div {
   .fade-in {
     opacity: 0;
     animation: fadeIn 1.2s ease-out forwards;
-  }
-
-  .achievements ul li {
-    padding-left: 1.5rem;
-  }
-
-  .achievements ul li::before {
-    content: "★";
-    color: var(--accent-color);
-    position: absolute;
-    left: -1.2rem;
   }
 
   .values ul li strong {
@@ -262,7 +228,6 @@ h4 {
   width: 90%;
   margin: 0 auto;
   max-width: 1400px;
-  margin-top: auto;
 }
 
 /* List Styling */
@@ -484,21 +449,24 @@ ul li strong {
 
 /* Page-specific Hero Background */
 body#home-page .hero {
-  background: url("images/home.webp") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/home.webp") center/cover;
 }
 body#about-page .hero {
-  background: url("images/about.webp") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/about.webp") center/cover;
 }
 body#admission-page .hero {
-  background: url("images/admission.webp") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/admission.webp") center/cover;
 }
-
 body#life-page .hero {
-  background: url("images/life.webp") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/life.webp") center/cover;
 }
-
 body#contact-page .hero {
-  background: url("images/home.webp") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/home.webp") center/cover;
 }
 
 .fade-in-on-scroll {
@@ -515,7 +483,9 @@ body#contact-page .hero {
 .hero-container {
   overflow: hidden; /* Ensure the animation stays within the container */
 }
+
 .hero {
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-color: #fff9cc; /* Light Gold */
   height: 100vh;
@@ -1105,7 +1075,7 @@ body {
 /* life Page CSS*/
 
 .section {
-  margin: 4rem 0;
+  margin: 4rem 2rem;
   padding: 2rem;
   background: white;
   border-radius: 15px;
