@@ -74,14 +74,13 @@
       </div>
     </nav>
 
-    <!-- Modal HTML -->
-    <div id="imageModal" class="modal">
-      <span class="modal-close" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-        <img id="modalImage" src="" alt="Image Preview" />
-        <!-- Image tag for the preview -->
-      </div>
+    <!-- Modal for showing the zoomed image -->
+    <div id="zoomedImageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="zoomedImg" class="modal-content" />
+      <div id="caption"></div>
     </div>
+
     <div class="hero-container">
       <section class="hero">
         <div class="hero-content">
@@ -356,42 +355,59 @@
       </div>
     </footer>
     <script>
-      // Add modal functionality
-      const modal = document.getElementById("imageModal");
-      const modalImage = document.getElementById("modalImage");
+      // Get all gallery images
+      const galleryImages = document.querySelectorAll(".gallery-item img");
 
-      // Add click listeners to all gallery items
-      document.querySelectorAll(".gallery-item").forEach((item) => {
-        item.addEventListener("click", function () {
-          // Get the image source from the clicked gallery item
-          const imageSrc = this.querySelector("img").src;
+      // Get modal elements
+      const modal = document.getElementById("zoomedImageModal");
+      const modalImg = document.getElementById("zoomedImg");
+      const captionText = document.getElementById("caption");
 
-          // Set the source of the modal image to the clicked image's source
-          modalImage.src = imageSrc;
+      // Function to open modal with the clicked image
+      galleryImages.forEach((img) => {
+        img.addEventListener("click", function (e) {
+          // Get the click position relative to the page
+          const clickX = e.pageX;
+          const clickY = e.pageY;
 
-          // Show the modal
-          modal.classList.add("active");
+          // Position the modal based on the click position
+          modal.style.left = `${clickX}px`;
+          modal.style.top = `${clickY}px`;
+
+          // Set the zoomed image and caption
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+
+          // Make the modal visible
+          modal.style.display = "block";
         });
       });
 
-      // Close modal function
+      // Function to close the modal
       function closeModal() {
-        modal.classList.remove("active");
+        modal.style.display = "none";
       }
 
-      // Close modal when clicking outside the image
-      modal.addEventListener("click", function (e) {
+      // Close modal if clicked outside of the modal content
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("imageModal");
+
         if (e.target === modal) {
           closeModal();
         }
       });
 
-      // Close modal with escape key
-      document.addEventListener("keydown", function (e) {
+      // Close modal when Escape key is pressed
+      window.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
           closeModal();
         }
       });
+
+      // Close modal when close button is clicked
+      document
+        .getElementById("closeModal")
+        .addEventListener("click", closeModal);
     </script>
   </body>
 </html>

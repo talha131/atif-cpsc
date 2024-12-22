@@ -191,6 +191,64 @@ body#about-page > div {
     color: var(--primary-color);
   }
 }
+/* apply now button */
+
+.application-form {
+  background: #f4f4f9;
+  padding: 40px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
 
 /* General/Common  styles */
 
@@ -645,55 +703,51 @@ body#contact-page .hero {
   transform: scale(1.1);
 }
 
-/* Modal background and positioning */
-/* Modal background and positioning */
+/* Gallery Styles */
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Modal Styles */
+/* Modal Styles */
 .modal {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  position: absolute; /* Change from fixed to absolute */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Modal active state */
-.modal.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-/* Modal content - ensure no extra padding/margin */
 .modal-content {
-  max-width: 90%;
-  max-height: 90%;
-  overflow: hidden;
-  text-align: center;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
 }
 
-/* Image inside the modal */
-#modalImage {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Ensures the image maintains aspect ratio */
-}
-
-/* Close button */
-.modal-close {
+.close {
   position: absolute;
-  right: 15px;
   top: 10px;
-  font-size: 30px;
-  color: white;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 1001;
 }
 
 /* Home Page CSS */
