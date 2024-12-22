@@ -47,7 +47,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="Scripts.js"></script>
   </head>
   <body id="about-page">
@@ -85,8 +85,9 @@
         </div>
       </section>
     </div>
+
     <div class="container">
-      <div data-aos="flip-left" class="legacy fade-in section">
+      <div data-aos="fade-right" class="legacy section">
         <h2>Our Legacy</h2>
         <p>
           Cantt Public School & College (CPS&C), established in 1987 under the
@@ -115,7 +116,7 @@
         </p>
       </div>
 
-      <div data-aos="flip-up" class="campus fade-in section">
+      <div data-aos="fade-left" class="campus section">
         <h2>Our Campus</h2>
         <p>
           Our state-of-the-art campus spans over 25 acres of meticulously
@@ -145,7 +146,7 @@
         </ul>
       </div>
 
-      <div data-aos="flip-right" class="values fade-in section">
+      <div data-aos="flip-right" class="values section">
         <h2>Our Values</h2>
         <ul>
           <li>
@@ -175,7 +176,7 @@
         </ul>
       </div>
 
-      <div data-aos="flip-down" class="leadership fade-in section">
+      <div data-aos="flip-down" class="leadership section">
         <h2>Leadership Team</h2>
         <div class="leader">
           <h3>Brigadier. Suhail Abbas S.I. (M)</h3>
@@ -199,7 +200,7 @@
         </div>
       </div>
 
-      <div data-aos="flip-left" class="join fade-in section">
+      <div data-aos="flip-left" class="join section">
         <h2>Join Our Community</h2>
         <p>
           Experience excellence in education at CPS&C Malir. Our diverse and
@@ -264,23 +265,11 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".fade-in").forEach((element) => {
-        observer.observe(element);
+      AOS.init({
+        duration: 1200,
       });
     </script>
   </body>
