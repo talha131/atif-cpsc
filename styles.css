@@ -426,7 +426,17 @@ ul li strong {
 }
 
 /* Mobile Navigation */
+
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+  }
   .about {
     padding: 1rem;
   }
