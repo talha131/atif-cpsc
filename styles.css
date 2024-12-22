@@ -395,9 +395,12 @@ ul li strong {
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px; /* Increases padding for better touch targets */
   box-shadow: 0 2px 4px var(--shadow-color);
   border-radius: 5px;
+  min-width: 44px; /* Ensures minimum width for touch targets */
+  display: inline-block; /* Ensures a larger clickable area */
+  text-align: center; /* Centers the text for better appearance */
 }
 
 .nav-links a:hover {
@@ -424,26 +427,33 @@ ul li strong {
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: var(--primary-color);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
+  .about {
     padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 4px 6px var(--shadow-color);
-    z-index: 2000;
   }
 
-  .nav-links.active {
-    display: flex;
+  h1 {
+    font-size: 2rem;
   }
 
-  .hamburger {
-    display: flex;
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .legacy,
+  .campus,
+  .values,
+  .leadership,
+  .achievements,
+  .join {
+    padding: 1.5rem;
+  }
+
+  /* Ensure touch targets are large enough on mobile */
+  .footer-bottom a,
+  .footer-social a,
+  .footer-section ul li a,
+  .nav-links a {
+    padding: 12px 24px; /* Increases padding for easier mobile interaction */
   }
 }
 
@@ -575,8 +585,11 @@ body#contact-page .hero {
   color: #f1f1f1;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: inline-block; /* Ensures a larger clickable area */
+  padding: 10px 20px; /* Adds padding to make the target large enough */
+  min-width: 44px; /* Ensures minimum width for touch targets */
+  text-align: center; /* Centers the text for better appearance */
 }
-
 .footer-section ul li a:hover {
   color: var(--secondary);
   text-decoration: underline;
@@ -595,13 +608,13 @@ body#contact-page .hero {
   color: #f1f1f1;
   font-size: 1rem;
   text-decoration: none; /* Removes underline from all links */
-
-  /* Reduced icon size */
   transition: color 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  /* Smaller gap between icon and text */
+  padding: 10px; /* Adds padding for touch target size */
+  min-width: 44px; /* Ensures minimum width for touch targets */
+  border-radius: 5px; /* Optional: for rounded touch targets */
 }
 
 .footer-social a:hover {
@@ -640,8 +653,11 @@ body#contact-page .hero {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: inline-block; /* Ensures a larger clickable area */
+  padding: 10px 20px; /* Adds padding to make the target large enough */
+  min-width: 44px; /* Ensures minimum width for touch targets */
+  text-align: center; /* Centers the text for better appearance */
 }
-
 /* Mobile View (for screens less than 768px) */
 @media screen and (max-width: 768px) {
   /* Stack the items vertically on small screens */
