@@ -1003,7 +1003,7 @@ body {
 }
 
 .message-content h4 {
-  color: rgba(183, 58, 58, 0.7); /* Warm Burgundy with 70% transparency */
+  color: #ff0707b3; /* Warm Burgundy with 70% transparency */
   margin-bottom: 1rem;
   font-style: italic;
 }
