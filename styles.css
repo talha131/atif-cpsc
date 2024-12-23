@@ -879,7 +879,6 @@ body#contact-page .hero {
 /* Home Page CSS */
 
 
-
 /* Section Hover Effects */
 #introduction {
   background-color: rgba(
@@ -980,7 +979,18 @@ body#contact-page .hero {
   opacity: 1;
   transform: translateY(0); /* Smooth scroll effect (up) */
 }
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  #home-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size */
+    gap: 15px; /* Adjust gap between items */
+  }
 
+  .gallery-caption {
+    font-size: 14px; /* Make the caption font smaller */
+    padding: 3px; /* Adjust padding for smaller screens */
+  }
+}
 /* Scroll Animation for Sections */
 @keyframes fadeInUp {
   from {
