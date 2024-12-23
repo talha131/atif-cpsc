@@ -162,14 +162,13 @@ body#about-page > div {
     }
 
     .legacy,
-	.join{
+    .join {
       padding: 1.5rem;
     }
     .campus,
     .values,
     .leadership,
-    .achievements,
-     {
+    .achievements {
       padding: 0.5rem;
     }
   }
@@ -279,12 +278,6 @@ h4 {
   font-family: "PT Serif", serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -354,13 +347,6 @@ ul li strong {
   --hover-color: #dfd174; /* Neon Green */
   --text-color: #ffffff; /* White */
   --shadow-color: rgba(0, 0, 0, 0.2);
-}
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* Navbar styles */
@@ -599,7 +585,6 @@ body#contact-page .hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -612,7 +597,6 @@ body#contact-page .hero {
 
 .footer-section h4 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
   color: var(--secondary);
   font-weight: bold;
   text-align: center; /* Center heading text */
@@ -649,7 +633,6 @@ body#contact-page .hero {
 .footer-social {
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   gap: 0.75rem;
   margin-top: 0.5rem;
 }
@@ -659,7 +642,6 @@ body#contact-page .hero {
   font-size: 1rem;
   text-decoration: none;
   display: inline-flex;
-  align-items: center;
   gap: 0.3rem;
   padding: 10px;
   border-radius: 5px;
@@ -673,7 +655,6 @@ body#contact-page .hero {
 .footer-bottom {
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
-  align-items: center;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -880,7 +861,6 @@ body#contact-page .hero {
 }
 /* Home Page CSS */
 
-
 /* Section Hover Effects */
 #introduction {
   background-color: rgba(
@@ -984,12 +964,16 @@ body#contact-page .hero {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
   #home-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size */
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Adjust column size */
     gap: 15px; /* Adjust gap between items */
   }
-	.gallery-item {
-		margin-left: 0;
-	}
+
+  .gallery-item {
+    margin-left: 0;
+  }
   .gallery-caption {
     font-size: 14px; /* Make the caption font smaller */
     padding: 3px; /* Adjust padding for smaller screens */
