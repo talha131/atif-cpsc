@@ -792,7 +792,6 @@ body#contact-page .hero {
 }
 
 /* Modal Styles */
-/* Modal Styles */
 .modal {
   display: none;
   position: absolute; /* Change from fixed to absolute */
@@ -818,6 +817,35 @@ body#contact-page .hero {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#zoomedImageModal {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw; /* 80% of the viewport width */
+  height: 80vh; /* 80% of the viewport height */
+  background: rgba(0, 0, 0, 0.9); /* Dark background for contrast */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+#zoomedImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+#caption {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2em;
+  overflow-wrap: break-word; /* Handle long captions */
 }
 
 /* Home Page CSS */

@@ -373,14 +373,19 @@
 
       // Function to open modal with the clicked image
       galleryImages.forEach((img) => {
-        img.addEventListener("click", function (e) {
-          // Get the click position relative to the page
-          const clickX = e.pageX;
-          const clickY = e.pageY;
+        img.addEventListener("click", function () {
+          // Get the current scroll position
+          const scrollX = window.scrollX;
+          const scrollY = window.scrollY;
 
-          // Position the modal based on the click position
-          modal.style.left = `${clickX}px`;
-          modal.style.top = `${clickY}px`;
+          // Calculate the center of the viewport
+          const viewportCenterX = scrollX + window.innerWidth / 2;
+          const viewportCenterY = scrollY + window.innerHeight / 2;
+
+          // Adjust modal position to center within the visible screen
+          modal.style.left = `${viewportCenterX}px`;
+          modal.style.top = `${viewportCenterY}px`;
+          modal.style.transform = "translate(-50%, -50%)"; // Center the modal precisely
 
           // Set the zoomed image and caption
           modalImg.src = this.src;
@@ -398,8 +403,6 @@
 
       // Close modal if clicked outside of the modal content
       window.addEventListener("click", function (e) {
-        const modal = document.getElementById("imageModal");
-
         if (e.target === modal) {
           closeModal();
         }
