@@ -840,7 +840,7 @@ body#contact-page .hero {
   transform: translate(-50%, -50%);
   width: 80vw; /* 80% of the viewport width */
   height: 80vh; /* 80% of the viewport height */
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -863,17 +863,19 @@ body#contact-page .hero {
 }
 
 /* Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
   #zoomedImageModal {
     width: 90vw; /* Adjust width for smaller screens */
-    height: 70vh; /* Adjust height for smaller screens */
+    height: auto; /* Auto height to prevent excessive height */
+    max-height: 80vh; /* Limit max-height to 80% of viewport height */
+    background: rgba(0, 0, 0, 0.6); /* Lighter background on mobile */
   }
 
   .modal-content {
     max-width: 90vw; /* Ensure content fits on smaller screens */
   }
 }
-
 /* Home Page CSS */
 
 /* Base Style for the Sections */
