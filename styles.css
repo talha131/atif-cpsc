@@ -794,21 +794,32 @@ body#contact-page .hero {
 /* Modal Styles */
 .modal {
   display: none;
-  position: absolute; /* Change from fixed to absolute */
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed; /* Change from absolute to fixed for better positioning */
+  top: 0; /* Ensure it's at the top */
+  left: 0; /* Ensure it's at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 1000; /* High z-index for overlay */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust opacity for more transparency */
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Modal content */
 .modal-content {
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 700px; /* You can adjust this to suit your design */
 }
 
+/* Close button */
 .close {
   position: absolute;
   top: 10px;
@@ -819,33 +830,48 @@ body#contact-page .hero {
   cursor: pointer;
 }
 
+/* Zoomed Image Modal */
 #zoomedImageModal {
-  position: absolute;
+  position: fixed; /* Change to fixed for better centering */
   display: none;
   z-index: 1000;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 60vw; /* 80% of the viewport width */
+  width: 80vw; /* 80% of the viewport width */
   height: 80vh; /* 80% of the viewport height */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
   padding: 10px;
   border-radius: 10px;
   text-align: center;
   overflow: hidden; /* Prevent content overflow */
 }
 
+/* Image styles */
 #zoomedImg {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain; /* Ensure the image scales properly */
 }
 
+/* Caption */
 #caption {
   margin-top: 10px;
   color: white;
   font-size: 1.2em;
   overflow-wrap: break-word; /* Handle long captions */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  #zoomedImageModal {
+    width: 90vw; /* Adjust width for smaller screens */
+    height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .modal-content {
+    max-width: 90vw; /* Ensure content fits on smaller screens */
+  }
 }
 
 /* Home Page CSS */
