@@ -162,11 +162,14 @@ body#about-page > div {
     }
 
     .legacy,
+	.join{
+      padding: 1.5rem;
+    }
     .campus,
     .values,
     .leadership,
     .achievements,
-    .join {
+     {
       padding: 0.5rem;
     }
   }
