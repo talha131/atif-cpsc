@@ -878,18 +878,7 @@ body#contact-page .hero {
 }
 /* Home Page CSS */
 
-/* Base Style for the Sections */
-#introduction,
-#vision,
-#mission,
-#messages,
-#HomePageGallery {
-  padding: 20px;
-  color: #3e3e3e; /* Charcoal text */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and scroll effect */
-  opacity: 0.15; /* Initial opacity to make it lighter */
-  transform: translateY(50px); /* Sections are initially offset vertically */
-}
+
 
 /* Section Hover Effects */
 #introduction {
