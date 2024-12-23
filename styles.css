@@ -826,9 +826,9 @@ body#contact-page .hero {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80vw; /* 80% of the viewport width */
+  width: 60vw; /* 80% of the viewport width */
   height: 80vh; /* 80% of the viewport height */
-  background: rgba(0, 0, 0, 0.9); /* Dark background for contrast */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   padding: 10px;
   border-radius: 10px;
   text-align: center;
