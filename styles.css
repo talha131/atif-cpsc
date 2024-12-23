@@ -863,7 +863,6 @@ body#contact-page .hero {
 }
 
 /* Mobile Responsiveness */
-/* Mobile Responsiveness */
 @media (max-width: 600px) {
   #zoomedImageModal {
     width: 90vw; /* Adjust width for smaller screens */
@@ -985,7 +984,9 @@ body#contact-page .hero {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size */
     gap: 15px; /* Adjust gap between items */
   }
-
+	.gallery-item {
+		margin-left: 0;
+	}
   .gallery-caption {
     font-size: 14px; /* Make the caption font smaller */
     padding: 3px; /* Adjust padding for smaller screens */
