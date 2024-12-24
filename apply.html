@@ -168,7 +168,9 @@
         const formData = new FormData(event.target);
 
         // Send form data to Apps Script using fetch
-        fetch('https://script.google.com/macros/s/AKfycbx_8W4J7LNgAN-okQGUqPw_fS4MDeThCIxfpwXHo57ubOu1G1UqtJTqCl2WHtOwnKQN/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbx5HpbnhMvsaPBhbW2Zs4m8xl3ftIKXqLJrevqadqM35LlaMcoBSIRQHfYJ6BNVIr3g/exec', {
+		  mode: 'no-cors', // This disables CORS but limits response handling
+
           method: 'POST',
           body: formData
         })
