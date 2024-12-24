@@ -10,6 +10,7 @@ body#about-page > div {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
+	text-align: justify;
   }
 
   ul li {
@@ -863,6 +864,7 @@ body#contact-page .hero {
 
 /* Section Hover Effects */
 #introduction {
+	text-align: justify;
   background-color: rgba(
     255,
     228,
@@ -883,6 +885,7 @@ body#contact-page .hero {
 }
 
 #vision {
+	text-align: justify;
   background-color: rgba(
     255,
     218,
@@ -903,6 +906,7 @@ body#contact-page .hero {
 }
 
 #mission {
+	text-align: justify;
   background-color: rgba(
     173,
     255,
@@ -1165,6 +1169,7 @@ body {
 /* life Page CSS*/
 
 .section {
+	text-align: justify;
   margin: 4rem 2rem;
   padding: 2rem;
   background: white;
@@ -1200,6 +1205,7 @@ body {
 }
 
 .facilities-section {
+	text-align: justify;
   padding: 4rem 2rem;
   background: #f8f9fa;
 }
@@ -1222,6 +1228,7 @@ body {
 }
 
 .facility-card {
+	text-align: justify;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -1257,6 +1264,7 @@ body {
   color: #f18701;
   /* Primary color */
   margin-bottom: 1rem;
+  
 }
 
 .facility-content h3 {
@@ -1284,6 +1292,7 @@ body {
 /* admission Page CSS*/
 
 .policy-content {
+	text-align: justify;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
@@ -1292,32 +1301,11 @@ body {
   border-radius: 10px;
   margin-top: -50px;
   position: relative;
-}
-
-.policy-content {
-  text-align: center;
-  /* Center-align the h3 within the container */
 }
 
 .policy-section {
   margin-bottom: 2rem;
   animation: fadeIn 1s ease;
-}
-
-.policy-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-  background: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-top: -50px;
-  position: relative;
-}
-
-.policy-content {
-  text-align: center;
-  /* Center-align the h3 within the container */
 }
 
 .policy-content h3 {
