@@ -543,10 +543,10 @@ body#apply-page .hero {
 }
 
 /* Hover Effect for Here heading*/
-.hero-content h1:hover {
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+.hero-content h1 {
+  -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @-webkit-keyframes tracking-in-expand {
   0% {
