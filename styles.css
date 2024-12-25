@@ -999,14 +999,6 @@ body#apply-page .hero {
   }
 }
 
-/* Apply the Scroll Animation */
-#introduction,
-#vision,
-#mission,
-#messages,
-#HomePageGallery {
-  animation: fadeInUp 1s ease-out forwards; /* Apply smooth scroll fade-in animation */
-}
 
 /* Trigger the Scroll Animation on Page Load */
 body {

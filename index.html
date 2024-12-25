@@ -69,7 +69,7 @@
       <div class="container">
          <!-- About Section -->
          <section id="about-section" class="about-section">
-            <div data-aos="fade-up" class="section" id="introduction">
+            <div data-aos="flip-left" class="section" id="introduction">
                <h2>Introduction</h2>
                <p>
                   <em>Introduction to Cantt Public School & College, Malir Cantt – Karachi Region</em>
@@ -85,15 +85,15 @@
                   At CPS&C, emphasis is placed on a balanced education, blending academics with extracurricular and co-curricular activities to ensure the all-rounded development of students. With a proud legacy of excellence, CPS&C continues to inspire and shape future leaders, standing as a beacon of quality education in the Karachi region.
                </p>
             </div>
-            <div data-aos="fade-down" class="section" id="vision">
+            <div data-aos="flip-down" class="section" id="vision">
                <h2>Vision</h2>
                <p>Dedicated to a continuing ML&C tradition of excellence in an ever-changing world. Within a safe and congenial environment, to provide relevant, high-quality education and prepare a dynamic student body for future endeavors at par with global standards by instilling in them critical thinking skills, and respect for core values of honesty, loyalty, perseverance, and compassion. To honor achievements and promote pride in ourselves, in our school, and in our community</p>
             </div>
-            <div data-aos="fade-right" class="section" id="mission">
+            <div data-aos="flip-right" class="section" id="mission">
                <h2>Mission</h2>
                <p>The mission of CPES is to provide a comprehensive learning environment, integrating various modules of STEAM, thus expanding learning horizons to new dimensions where cantonment residents are valued and respected. All staff members in partnership with parents and families are fully committed to the academic well-being of learners, empowering them with cognitive and work readiness skills and becoming socially responsible citizens.</p>
             </div>
-            <div data-aos="fade-left" class="message-grid" id="messages">
+            <div data-aos="flip-up" class="message-grid" id="messages">
                <div class="message-card ">
                   <div class="profile-image">
                      <img src="images/about/president.webp" alt="President" class="profile-img"> 
@@ -129,7 +129,7 @@
                </div>
             </div>
             <!-- Gallery Section -->
-            <div class="section" id="HomePageGallery">
+            <div class="section" data-aos="flip-up" id="HomePageGallery">
                <h2>Campus Life Gallery</h2>
                <div class="image-gallery" id="home-gallery">
                   <div class="gallery-item">
@@ -263,6 +263,10 @@
       document
         .getElementById("closeModal")
         .addEventListener("click", closeModal);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
    </body>
 </html>
