@@ -10,7 +10,7 @@ body#about-page > div {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
-	text-align: justify;
+    text-align: justify;
   }
 
   ul li {
@@ -283,6 +283,7 @@ h4 {
   width: 90%;
   margin: 0 auto;
   max-width: 1400px;
+  overflow: hidden;
 }
 
 /* List Styling */
@@ -583,13 +584,13 @@ body#apply-page .hero {
   background: #333;
   color: #f1f1f1;
   padding: 1rem 1rem;
-  text-align: center; /* Center text by default */
+  text-align: center;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -604,7 +605,7 @@ body#apply-page .hero {
   font-size: 1.2rem;
   color: var(--secondary);
   font-weight: bold;
-  text-align: center; /* Center heading text */
+  text-align: center;
 }
 
 .footer-section p,
@@ -612,7 +613,7 @@ body#apply-page .hero {
   font-size: 0.9rem;
   line-height: 1.4;
   color: #e0e0e0;
-  text-align: center; /* Center paragraphs and lists */
+  text-align: center;
 }
 
 .footer-section ul {
@@ -623,7 +624,6 @@ body#apply-page .hero {
 
 .footer-section ul li {
   margin-bottom: 0.2rem;
-  line-height: 1.2;
 }
 
 .footer-section ul li a {
@@ -631,13 +631,11 @@ body#apply-page .hero {
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
-  min-width: 44px;
-  text-align: center;
 }
 
 .footer-social {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   gap: 0.75rem;
   margin-top: 0.5rem;
 }
@@ -658,70 +656,23 @@ body#apply-page .hero {
 
 /* Footer Bottom Section */
 .footer-bottom {
-  display: flex;
-  justify-content: space-between; /* Distribute items evenly */
+  text-align: center;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.8rem;
   color: #dcdcdc;
-  position: relative;
-}
-
-/* Designer Credit - Right Aligned */
-.footer-bottom .designer-credit {
-  text-align: right;
-  flex: 1; /* Take up available space */
-}
-
-/* Copyright - Centered */
-.footer-bottom .copyright {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.footer-bottom a {
-  color: var(--secondary);
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-/* Mobile View */
-@media screen and (max-width: 768px) {
-  /* Stack the items vertically on small screens */
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center; /* Ensure text is centered on mobile */
-  }
-
-  /* Ensure the designer credit is left-aligned */
-  .footer-bottom .designer-credit {
-    text-align: left;
-    margin-bottom: 10px; /* Add spacing below "Designed by UTZ" */
-  }
-
-  /* Center the copyright text in mobile view */
-  .footer-bottom .copyright {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove the centering adjustment */
-  }
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     gap: 1rem;
-    /* Smaller gap between sections */
   }
 
   .footer-section {
     margin-bottom: 0.5rem;
-    /* Reduced spacing between sections */
   }
 
   .footer-social {
@@ -868,7 +819,7 @@ body#apply-page .hero {
 
 /* Section Hover Effects */
 #introduction {
-	text-align: justify;
+  text-align: justify;
   background-color: rgba(
     255,
     228,
@@ -889,7 +840,7 @@ body#apply-page .hero {
 }
 
 #vision {
-	text-align: justify;
+  text-align: justify;
   background-color: rgba(
     255,
     218,
@@ -910,7 +861,7 @@ body#apply-page .hero {
 }
 
 #mission {
-	text-align: justify;
+  text-align: justify;
   background-color: rgba(
     173,
     255,
@@ -998,7 +949,6 @@ body#apply-page .hero {
     transform: translateY(0);
   }
 }
-
 
 /* Trigger the Scroll Animation on Page Load */
 body {
@@ -1098,15 +1048,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem; /* Maintain a clear hierarchy */
-    margin-top: 1.5rem; /* Adjusted for better alignment */
-    line-height: 1.2; /* Improve readability */
+  .message-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 1rem; /* Reduce gap for compact layout */
   }
-  .tagline {
-    font-size: 1.2rem; /* Slightly larger for better readability */
-    margin-top: 1rem; /* Adjust for spacing consistency */
-    line-height: 1.4; /* Improve readability */
+
+  .message-card {
+    padding: 1.5rem; /* Reduce padding */
+  }
+
+  .profile-image {
+    width: 150px; /* Adjust size for smaller screens */
+    height: 150px;
+  }
+
+  .message-content p {
+    text-align: left; /* Optional for better readability */
   }
 }
 
@@ -1165,7 +1122,7 @@ body {
 /* life Page CSS*/
 
 .section {
-	text-align: justify;
+  text-align: justify;
   margin: 4rem 2rem;
   padding: 2rem;
   background: white;
@@ -1199,7 +1156,7 @@ body {
 }
 
 .facilities-section {
-	text-align: justify;
+  text-align: justify;
   padding: 4rem 2rem;
   background: #f8f9fa;
 }
@@ -1222,7 +1179,7 @@ body {
 }
 
 .facility-card {
-	text-align: justify;
+  text-align: justify;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -1258,7 +1215,6 @@ body {
   color: #f18701;
   /* Primary color */
   margin-bottom: 1rem;
-  
 }
 
 .facility-content h3 {
@@ -1286,7 +1242,7 @@ body {
 /* admission Page CSS*/
 
 .policy-content {
-	text-align: justify;
+  text-align: justify;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
