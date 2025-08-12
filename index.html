@@ -1,262 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Cantt Public School & College (CPS&C) Malir, established in 1987, offers quality education and holistic development through modern facilities, including science labs, libraries, and sports grounds.">
-      <meta name="keywords" content="CPS&C Malir, Cantt Public School, education in Karachi, admission policy, academic excellence, campus life, extracurricular activities, leadership skills, school facilities, CPS&C Karachi, educational institution in Karachi, school and college Malir">
-      <meta name="author" content="CPS&C Malir">
-      <meta name="robots" content="index, follow">
-      <meta property="og:title" content="Cantt Public School & College (CPS&C) Malir - Empowering Minds, Shaping Futures">
-      <meta property="og:description" content="CPS&C Malir offers a dynamic learning environment focusing on academic excellence, character building, and leadership skills, with state-of-the-art facilities and modern amenities.">
-      <meta property="og:image" content="path_to_image.webp">
-      <meta property="og:url" content="https://www.cpsc.edu.pk">
-      <meta property="og:type" content="website">
-      <meta name="twitter:title" content="Cantt Public School & College (CPS&C) Malir - Empowering Minds, Shaping Futures">
-      <meta name="twitter:description" content="CPS&C Malir provides quality education and holistic development, preparing students for future success with modern campus facilities and strong academic and extracurricular programs.">
-      <meta name="twitter:image" content="path_to_image.webp">
-      <meta name="twitter:card" content="summary_large_image">
-      <title>Cantt Public School & College (CPS&C) Malir | Quality Education in Karachi</title>
-      <link rel="icon" type="image/webp" href="images/favicon.webp">
-      <link rel="stylesheet" href="styles.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-      <script src="Scripts.js"></script>
-   </head>
-   <body id="home-page">
-      <nav class="navbar">
-         <!-- Left: Logo and Brand -->
-         <div class="navbar-left">
-            <div class="navbar-logo">
-               <img src="images/logo.webp" alt="CPS&C Logo" class="logo">
-            </div>
-            <a href="/" class="navbar-brand">Cantt Public School & College</a>
-         </div>
-         <!-- Hamburger Menu -->
-         <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
-         <!-- Right: Navigation Links -->
-         <div class="nav-links" id="nav-links">
-            <a href="/about.html">ABOUT US</a>
-            <a href="/admission.html">ADMISSION POLICY</a>
-            <a href="/life.html">LIFE AT CPS&C</a>
-            <a href="/contact.html">CONTACT</a>
-         </div>
-      </nav>
-      <!-- Hero Section -->
-      <div class="hero-container">
-         <section class="hero">
-            <div class="hero-content">
-               <h1>Welcome to Cantt Public School & College <br>Malir Cantt, Karachi</h1>
-               <p class="tagline">Empowering Minds, Shaping Futures</p>
-            </div>
-         </section>
-      </div>
-      <!-- Modal for showing the zoomed image -->
-      <div id="zoomedImageModal" class="modal">
-         <span class="close" onclick="closeModal()">&times;</span>
-         <img id="zoomedImg" class="modal-content" />
-         <div id="caption"></div>
-      </div>
-      <div class="container">
-         <!-- About Section -->
-         <section id="about-section" class="about-section">
-            <div data-aos="flip-left" class="section" id="introduction">
-               <h2>Introduction</h2>
-               <p>
-                  <em>Introduction to Cantt Public School & College, Malir Cantt – Karachi Region</em>
-               </p>
-               <br>
-               <p>Established in 1987 under the auspices of the Cantonment Board Malir, Ministry of Defence, Government of Pakistan, Cantt Public School & College (CPS&C) has been a cornerstone of quality education in the Karachi region. Since its inception, CPS&C has remained steadfast in its commitment to fostering academic excellence, character development, and leadership skills among its students.
-               </p>
-               <br>
-               <p>Recognized today as one of Karachi's premier educational institutions, CPS&C features a purpose-built, state-of-the-art campus equipped with modern amenities. These include well-equipped science and computer laboratories, a comprehensive library, spacious playgrounds for sports and physical activities, and a multi-purpose auditorium for events, assemblies, and cultural programs. These facilities create a vibrant environment that nurtures creativity, innovation, and holistic growth.
-               </p>
-               <br>
-               <p>
-                  At CPS&C, emphasis is placed on a balanced education, blending academics with extracurricular and co-curricular activities to ensure the all-rounded development of students. With a proud legacy of excellence, CPS&C continues to inspire and shape future leaders, standing as a beacon of quality education in the Karachi region.
-               </p>
-            </div>
-            <div data-aos="flip-down" class="section" id="vision">
-               <h2>Vision</h2>
-               <p>Dedicated to a continuing ML&C tradition of excellence in an ever-changing world. Within a safe and congenial environment, to provide relevant, high-quality education and prepare a dynamic student body for future endeavors at par with global standards by instilling in them critical thinking skills, and respect for core values of honesty, loyalty, perseverance, and compassion. To honor achievements and promote pride in ourselves, in our school, and in our community</p>
-            </div>
-            <div data-aos="flip-right" class="section" id="mission">
-               <h2>Mission</h2>
-               <p>The mission of CPES is to provide a comprehensive learning environment, integrating various modules of STEAM, thus expanding learning horizons to new dimensions where cantonment residents are valued and respected. All staff members in partnership with parents and families are fully committed to the academic well-being of learners, empowering them with cognitive and work readiness skills and becoming socially responsible citizens.</p>
-            </div>
-            <div data-aos="flip-up" class="message-grid" id="messages">
-               <div class="message-card ">
-                  <div class="profile-image">
-                     <img src="images/about/president.webp" alt="President" class="profile-img"> 
-                  </div>
-                  <div class="message-content">
-                     <h3>Message From The President Cantonment Board Malir</h3>
-                     <h4>Brigadier. Suhail Abbas S.I. (M)</h4>
-                     <p>
-Cantt Public School and College has been providing educational facilities through its dynamic approach, focusing on core values such as honesty, loyalty, perseverance, and compassion. Our students include wards of Cantonment Board Malir employees, residents of Malir Cantt, and many others whom we consider valuable assets to be nurtured and developed. Our goal is to impart quality education, guided by Albert Einstein’s insight that "Education is not the learning of facts, but the training of the mind to think." May Allah bless us with crowning success in all our endeavors. Ameen.</p>
-                  </div>
-               </div>
-               <div class="message-card ">
-                  <div class="profile-image">
-                     <img src="images/about/ceo.webp" alt="CEO" class="profile-img">
-                  </div>
-                  <div class="message-content">
-                     <h3>Message From The CEO</h3>
-                     <h4>Mr. Arfeen Zubair Chaudhry</h4>
-                     <p>Education is a key that unlocks the creative impulses within human beings and I would say it emphatically, that education is the process of empowering individuals and educational institutions are the agents of this empowerment. Our mission is to strive for excellence and to give quality education to all our students . Collectively, we are committed that every student has equal access to educational opportunities irrespective of their background or circumstances.
-</p>
-                  </div>
-               </div>
-               <div class="message-card ">
-                  <div class="profile-image">
-                     <img src="images/about/principal.webp" alt="Principal" class="profile-img">
-                  </div>
-                  <div class="message-content">
-                     <h3>Message From The Principal</h3>
-                     <h4>Ms. Uzma Nauman</h4>
-                     <p>It is my pride and privilege to serve as the Principal of Cantt Public School & College Malir Cantt Karachi. Our institution consistently achieves new milestones, each marking significant progress and reflecting our collective identity and commitment to education. We see great educational value in fostering a community where students are encouraged to think, write, and express themselves on various topics. We have immense faith in our students, believing that with an optimistic approach, we can excel and achieve perfection in our endeavors.
-<br>
-At Cantt Public School & College, each student is viewed as unique, with potential that is carefully nurtured in line with our vision to inspire every child to dream big. Best wishes to all our students, both current and alumni. You are the future of our country—aim high and march forward to make us and yourselves proud. May Allah Almighty bless you all. Ameen.  </p>
-                  </div>
-               </div>
-            </div>
-            <!-- Gallery Section -->
-            <div class="section" data-aos="flip-up" id="HomePageGallery">
-               <h2>Campus Life Gallery</h2>
-               <div class="image-gallery" id="home-gallery">
-                  <div class="gallery-item">
-                     <img src="images/home/Academic Excellence.webp" alt="Academic Excellence">
-                     <div class="gallery-caption">Academic Excellence</div>
-                  </div>
-                  <div class="gallery-item">
-                     <img src="images/home/Sports Activities.webp" alt="Sports Activities">
-                     <div class="gallery-caption">Sports Activities</div>
-                  </div>
-                  <div class="gallery-item">
-                     <img src="images/home/Contest  Participations.webp" alt="Contest  Participations">
-                     <div class="gallery-caption">Contest  Participations</div>
-                  </div>
-                  <div class="gallery-item">
-                     <img src="images/home/Library.webp" alt="Library">
-                     <div class="gallery-caption">Library</div>
-                  </div>
-                  <div class="gallery-item">
-                     <img src="images/home/Educational Events.webp" alt="Educational Events">
-                     <div class="gallery-caption">Educational Events</div>
-                  </div>
-                  <div class="gallery-item">
-                     <img src="images/home/Excursion Trips.webp" alt="Excursion Trips">
-                     <div class="gallery-caption">Excursion Trips</div>
-                  </div>
-               </div>
-            </div>
-      </div>
-      </section>
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h4>About Us</h4>
-      <p>
-        Building Tomorrow's Leaders Today through quality education and strong
-        values at CPS&C Malir.
-      </p>
-    </div>
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/life.html">LIFE AT CPS&C</a></li>
-        <li><a href="/admission.html">Admissions</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Connect with Us</h4>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/cpscmalircantt/" target="_blank">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M22.675 0h-21.35C.596 0 0 .593 0 1.326V22.67c0 .729.593 1.323 1.325 1.323h11.495V14.747h-3.13v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.661-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.505 0-1.797.716-1.797 1.763v2.312h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .593 23.406 0 22.675 0z"
-            />
-          </svg>
-          Facebook
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="copyright">&copy; CPS&C Malir. All rights reserved.</p>
-  </div>
-</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cantt Public School & College - Under Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fade-in-down {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.8s ease-out forwards;
+      }
+      .animate-fade-in-down {
+        animation: fade-in-down 0.6s ease-out forwards;
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.6s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900">
+    <main class="relative min-h-screen w-full flex items-center justify-center p-4 sm:p-6 lg:p-8 overflow-hidden">
+      <!-- Background Gradient & Stars -->
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-gray-900"></div>
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-         // Get all gallery images
-         const galleryImages = document.querySelectorAll(".gallery-item img");
-         
-         // Get modal elements
-         const modal = document.getElementById("zoomedImageModal");
-         const modalImg = document.getElementById("zoomedImg");
-         const captionText = document.getElementById("caption");
-         
-         // Function to open modal with the clicked image
-         galleryImages.forEach((img) => {
-           img.addEventListener("click", function () {
-             // Get the current scroll position
-             const scrollX = window.scrollX;
-             const scrollY = window.scrollY;
-         
-             // Calculate the center of the viewport
-             const viewportCenterX = scrollX + window.innerWidth / 2;
-             const viewportCenterY = scrollY + window.innerHeight / 2;
-         
-             // Adjust modal position to center within the visible screen
-             modal.style.left = `${viewportCenterX}px`;
-             modal.style.top = `${viewportCenterY}px`;
-             modal.style.transform = "translate(-50%, -50%)"; // Center the modal precisely
-         
-             // Set the zoomed image and caption
-             modalImg.src = this.src;
-             captionText.innerHTML = this.alt;
-         
-             // Make the modal visible
-             modal.style.display = "block";
-           });
-         });
-         
-         // Function to close the modal
-         function closeModal() {
-           modal.style.display = "none";
-         }
-         
-         // Close modal if clicked outside of the modal content
-         window.addEventListener("click", function (e) {
-           if (e.target === modal) {
-             closeModal();
-           }
-         });
-         
-         // Close modal when Escape key is pressed
-         window.addEventListener("keydown", function (e) {
-           if (e.key === "Escape") {
-             closeModal();
-           }
-         });
-         
-         // Close modal when close button is clicked
-         document
-           .getElementById("closeModal")
-           .addEventListener("click", closeModal);
-      </script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-         AOS.init();
-      </script>
-   </body>
+      <!-- Main Content Card -->
+      <div class="relative z-10 flex flex-col items-center text-center bg-black/30 backdrop-blur-lg border border-sky-900/50 rounded-2xl shadow-2xl shadow-sky-500/10 p-8 sm:p-12 max-w-3xl w-full transition-all duration-300 hover:border-sky-700/70">
+        
+        <!-- Logo -->
+        <div class="mb-6 animate-fade-in-down">
+          <svg 
+            class="h-24 w-24 text-sky-400"
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor" 
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <!-- Open Book Icon -->
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-sky-500 tracking-tight animate-fade-in" style="animation-delay: 200ms">
+          Cantt Public School & College
+        </h1>
+        <p class="mt-2 text-lg sm:text-xl font-medium text-gray-400 animate-fade-in" style="animation-delay: 400ms">
+          Malir Cantt, Karachi
+        </p>
+
+        <p class="mt-4 text-xl sm:text-2xl font-light text-sky-200 animate-fade-in" style="animation-delay: 500ms">
+          Empowering Minds, Shaping Futures
+        </p>
+
+        <hr class="w-24 border-t-2 border-sky-800 my-8 animate-fade-in" style="animation-delay: 600ms" />
+
+        <!-- Status Message -->
+        <div class="animate-fade-in-up" style="animation-delay: 800ms">
+          <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-3">
+            Our New Website is Coming Soon
+          </h2>
+          <p class="text-gray-300 max-w-xl mx-auto">
+            We are working hard to bring you a brand new online experience. Stay tuned for updates and information about our programs, admissions, and campus life.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="absolute bottom-4 text-center w-full text-gray-500 text-sm z-10">
+        &copy; <span id="year"></span> Cantt Public School & College. All Rights Reserved.
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
