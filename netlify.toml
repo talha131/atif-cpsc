@@ -1,0 +1,7 @@
+# Route every path through the coming-soon edge function so all old indexed
+# URLs (about.html, admission.html, apply.html, contact.html, ...) and the
+# homepage return the Coming Soon page with an HTTP 503 status. See
+# netlify/edge-functions/coming-soon.js for why 503 protects our SEO ranking.
+[[edge_functions]]
+  path = "/*"
+  function = "coming-soon"
